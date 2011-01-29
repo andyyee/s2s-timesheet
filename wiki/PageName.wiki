@@ -1,0 +1,24 @@
+<table width="100%">
+<tr>
+<td style="border:solid 1px black;">
+<h3>Team Members</h3>
+<ul>
+<li>Andrew Yee | <a href="mailto:andyyee@knights.ucf.edu">andyyee@knights.ucf.edu</a> | <a href="andrew.html">andrew.html</a></li>
+<li>Drew Rivette | <a href="mailto:rivetted@knights.ucf.edu">rivetted@knights.ucf.edu</a> | <a href="drew.html">drew.html</a></li>
+<li>Michael Armstrong | <a href="mailto:mdarmstrong@knights.ucf.edu">mdarmstrong@knights.ucf.edu</a> | <a href="michael.html">michael.html</a></li>
+<li>Joshua Subrahmanyan<br/><a href="mailto:sjosh@knights.ucf.edu">sjosh@knights.ucf.edu</a><br/><a href="josh.html">josh.html</a></li>
+<li>Karla Karola<br/><a href="mailto:karce@knights.ucf.edu">karce@knights.ucf.edu</a><br/><a href="karla.html">karla.html</a></li>
+<li>Kristina Mazza<br/><a href="mailto:kristinamazza@knights.ucf.edu">kristinamazza@knights.ucf.edu</a><br/><a href="kristina.html">kristina.html</a></li>
+</ul>
+</td>
+<td style="vertical-align:middle;border:solid 1px black;">
+<center><h1>Welcome to the Team 2S2 Project Site</h1></center>
+<center><h2>COP4331, Spring 2011</h2></center>
+<hr />
+<p>Our team's project is <b>spreadsheet project</b>.</p>
+<p>Welcome. Currently, we are in the progress of <b>generating questions for the client</b>. We will update the page as our work progresses.</p>
+<hr />
+<p>Last updated: January 27, 2011 by Andrew Yee</p>
+</td>
+</tr>
+</table>
