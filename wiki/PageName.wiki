@@ -18,7 +18,7 @@
 <p>Our team's project is <b>spreadsheet project</b>.</p>
 <p>Welcome. Currently, we are in the progress of <b>generating questions for the client</b>. We will update the page as our work progresses.</p>
 <hr />
-<p>Last updated: January 27, 2011 by Andrew Yee</p>
+<p>Last updated: January 31, 2011 by Andrew Yee</p>
 </td>
 </tr>
 </table>
