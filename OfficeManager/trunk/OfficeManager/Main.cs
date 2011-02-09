@@ -8,5 +8,6 @@ namespace OfficeManager
     public class Main
     {
         int blah = 0; //oh yeah!
+        blah++;
     }
 }
