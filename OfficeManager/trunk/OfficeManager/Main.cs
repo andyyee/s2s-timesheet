@@ -7,7 +7,10 @@ namespace OfficeManager
 {
     public class Main
     {
-        int blah = 0; //oh yeah!
-        blah++;
+        public void test()
+        {
+            int blah = 0; //oh yeah!
+            blah++;
+        }
     }
 }
