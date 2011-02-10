@@ -99,7 +99,6 @@
             this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Subject";
-            this.label3.UseWaitCursor = true;
             // 
             // textboxSubject
             // 
