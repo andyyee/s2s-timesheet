@@ -14,11 +14,8 @@ namespace OfficeManager
         public CalendarControl()
         {
             InitializeComponent();
+            
         }
 
-        private void CalendarGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }

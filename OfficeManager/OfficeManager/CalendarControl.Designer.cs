@@ -57,9 +57,8 @@
             this.CalendarGrid.Location = new System.Drawing.Point(0, 0);
             this.CalendarGrid.Name = "CalendarGrid";
             this.CalendarGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.CalendarGrid.Size = new System.Drawing.Size(610, 78);
+            this.CalendarGrid.Size = new System.Drawing.Size(689, 257);
             this.CalendarGrid.TabIndex = 0;
-            this.CalendarGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CalendarGrid_CellContentClick);
             // 
             // Time
             // 
