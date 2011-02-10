@@ -19,7 +19,7 @@ namespace OfficeManager
         private void Form1_Load(object sender, EventArgs e)
         {
             //Delete the Schedule tab
-            tabSchedule.Dispose();
+            tabManager.Dispose();
         }
     }
 }
