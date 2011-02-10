@@ -32,10 +32,11 @@
             this.tabHome = new System.Windows.Forms.TabPage();
             this.tabStatus = new System.Windows.Forms.TabPage();
             this.tabProfile = new System.Windows.Forms.TabPage();
-            this.tabSchedule = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabSchedule = new System.Windows.Forms.TabPage();
+            this.tabManager = new System.Windows.Forms.TabPage();
             this.tabs.SuspendLayout();
             this.tabProfile.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -47,6 +48,7 @@
             this.tabs.Controls.Add(this.tabStatus);
             this.tabs.Controls.Add(this.tabProfile);
             this.tabs.Controls.Add(this.tabSchedule);
+            this.tabs.Controls.Add(this.tabManager);
             this.tabs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabs.Location = new System.Drawing.Point(0, 0);
             this.tabs.Name = "tabs";
@@ -85,16 +87,6 @@
             this.tabProfile.TabIndex = 2;
             this.tabProfile.Text = "View/Edit Profile";
             // 
-            // tabSchedule
-            // 
-            this.tabSchedule.Location = new System.Drawing.Point(4, 22);
-            this.tabSchedule.Name = "tabSchedule";
-            this.tabSchedule.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSchedule.Size = new System.Drawing.Size(714, 467);
-            this.tabSchedule.TabIndex = 3;
-            this.tabSchedule.Text = "View Schedule";
-            this.tabSchedule.UseVisualStyleBackColor = true;
-            // 
             // tabControl1
             // 
             this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
@@ -127,6 +119,26 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // tabSchedule
+            // 
+            this.tabSchedule.Location = new System.Drawing.Point(4, 22);
+            this.tabSchedule.Name = "tabSchedule";
+            this.tabSchedule.Padding = new System.Windows.Forms.Padding(3);
+            this.tabSchedule.Size = new System.Drawing.Size(714, 467);
+            this.tabSchedule.TabIndex = 3;
+            this.tabSchedule.Text = "View Schedule";
+            this.tabSchedule.UseVisualStyleBackColor = true;
+            // 
+            // tabManager
+            // 
+            this.tabManager.Location = new System.Drawing.Point(4, 22);
+            this.tabManager.Name = "tabManager";
+            this.tabManager.Padding = new System.Windows.Forms.Padding(3);
+            this.tabManager.Size = new System.Drawing.Size(714, 467);
+            this.tabManager.TabIndex = 4;
+            this.tabManager.Text = "Manager Function";
+            this.tabManager.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -153,6 +165,7 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabManager;
     }
 }
 
