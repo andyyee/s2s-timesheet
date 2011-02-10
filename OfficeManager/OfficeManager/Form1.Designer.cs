@@ -76,6 +76,7 @@
             // 
             // tabProfile
             // 
+            this.tabProfile.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tabProfile.Controls.Add(this.tabControl1);
             this.tabProfile.Location = new System.Drawing.Point(4, 22);
             this.tabProfile.Name = "tabProfile";
@@ -83,7 +84,6 @@
             this.tabProfile.Size = new System.Drawing.Size(714, 467);
             this.tabProfile.TabIndex = 2;
             this.tabProfile.Text = "View/Edit Profile";
-            this.tabProfile.UseVisualStyleBackColor = true;
             // 
             // tabSchedule
             // 
@@ -100,21 +100,22 @@
             this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(3, 0);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(3, 3);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(595, 308);
+            this.tabControl1.Size = new System.Drawing.Size(708, 461);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(587, 279);
+            this.tabPage1.Size = new System.Drawing.Size(700, 432);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
