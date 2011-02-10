@@ -59,5 +59,36 @@ ForeBrush.Dispose();
         {
             ChangeTabColor(e);
         }
+
+        private void ad(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlPostItContainer_MouseClick(Object sender, MouseEventArgs e)
+        {
+            postIt note = new postIt();
+
+            pnlPostItContainer.Controls.Add(note);//add this new panel to the form
+            note.Location = new Point(e.X, e.Y); //set the location of the new label
+            note.setText(rchtxtbxPostItMessage.Text);
+
+            note.MouseEnter += new EventHandler(label_Enter);
+            note.MouseClick += new MouseEventHandler(label_Click);
+            note.BackColor = System.Drawing.Color.Red;
+            note.Size = new Size(100, 25);
+            note.ForeColor = System.Drawing.Color.Blue;
+        }
+        private void label_Enter(Object sender, EventArgs e)
+        {
+
+            postIt temp = (postIt)sender;
+            rchtxtbxPostItMessage.Text = temp.message;
+        }
+
+        private void label_Click(Object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
