@@ -80,7 +80,6 @@
             this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Message";
-            this.label1.UseWaitCursor = true;
             this.label1.Click += new System.EventHandler(this.Name_Click);
             // 
             // labelName
@@ -91,7 +90,6 @@
             this.labelName.Size = new System.Drawing.Size(35, 13);
             this.labelName.TabIndex = 5;
             this.labelName.Text = "Name";
-            this.labelName.UseWaitCursor = true;
             // 
             // label3
             // 
