@@ -17,6 +17,7 @@ namespace OfficeManager
         public Panel holder;
         public postIt note;
         public Boolean success = false;
+        
         public FormPostIt(Point location, Panel holder, postIt note)
         {
             InitializeComponent();
@@ -27,6 +28,11 @@ namespace OfficeManager
             this.note = note;
         }
 
+        /*
+         * This method generates a label with the specified traits
+         * A note has a background and text color, subject, and message
+         * The user is restricted to 25 characters in the subject, and no message limit
+         */
         private void btnPost_Click(object sender, EventArgs e)
         {
             holder.Controls.Add(note);
@@ -40,6 +46,7 @@ namespace OfficeManager
             this.Dispose();
         }
 
+        //clears the components in the form
         private void btnClear_Click(object sender, EventArgs e)
         {
             textColor = Color.Black;
