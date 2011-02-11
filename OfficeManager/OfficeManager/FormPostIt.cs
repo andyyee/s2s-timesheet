@@ -67,6 +67,7 @@ namespace OfficeManager
             {
                 //changes the current color in the textbox to the current one picked
                 txtbxMessage.BackColor = colorDlg.Color;
+                txtbxSubject.BackColor = colorDlg.Color;
                 backgroundColor = colorDlg.Color;                
             }
         }
@@ -89,8 +90,9 @@ namespace OfficeManager
 
             if (colorDlg.ShowDialog() == DialogResult.OK)
             {
-                //the color choosen will be displayed once the user presses the okay button 
+                //the color chosen will be displayed once the user presses the okay button 
                 txtbxMessage.ForeColor = colorDlg.Color;
+                txtbxSubject.ForeColor = colorDlg.Color;
                 textColor = colorDlg.Color;
             }
         }
