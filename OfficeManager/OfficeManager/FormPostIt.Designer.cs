@@ -80,7 +80,6 @@
             this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Message";
-            this.label1.Click += new System.EventHandler(this.Name_Click);
             // 
             // labelName
             // 
@@ -107,7 +106,6 @@
             this.textboxSubject.Size = new System.Drawing.Size(137, 23);
             this.textboxSubject.TabIndex = 7;
             this.textboxSubject.Text = "";
-            this.textboxSubject.TextChanged += new System.EventHandler(this.textboxSubject_TextChanged);
             // 
             // textboxMessage
             // 
@@ -117,7 +115,6 @@
             this.textboxMessage.Size = new System.Drawing.Size(260, 91);
             this.textboxMessage.TabIndex = 0;
             this.textboxMessage.Text = "";
-            this.textboxMessage.TextChanged += new System.EventHandler(this.textboxMessage_TextChanged);
             // 
             // btnBackgroundColor
             // 
@@ -160,7 +157,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "FormPostIt";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,9 +171,9 @@
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RichTextBox textboxSubject;
-        private System.Windows.Forms.RichTextBox textboxMessage;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Button btnBackgroundColor;
         private System.Windows.Forms.Button btnTextColor;
+        public System.Windows.Forms.RichTextBox textboxMessage;
     }
 }

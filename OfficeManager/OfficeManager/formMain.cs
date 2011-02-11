@@ -73,11 +73,10 @@ namespace OfficeManager
             postIt note = new postIt();
             FormPostIt Post = new FormPostIt();
             Post.ShowDialog();
-            Post.Focus();
+  
 
             pnlPostItContainer.Controls.Add(note);//add this new panel to the form
             note.Location = new Point(e.X, e.Y); //set the location of the new label
-            note.setText(rchtxtbxPostItMessage.Text);
 
             note.MouseEnter += new EventHandler(label_Enter);
             note.MouseClick += new MouseEventHandler(label_Click);

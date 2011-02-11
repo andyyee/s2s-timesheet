@@ -11,15 +11,15 @@ namespace OfficeManager
 {
     public partial class FormPostIt : Form
     {
+        Color backgroundColor; 
+        Color textColor;
         public FormPostIt()
         {
             InitializeComponent();
+            textColor = new Color();
+            backgroundColor = new Color(); 
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void Message_Click(object sender, EventArgs e)
         {
@@ -30,6 +30,22 @@ namespace OfficeManager
         {
 
         }
+        private void btnPost_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            textColor = Color.Black;
+            backgroundColor = Color.Black;
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        
         private void btnBackgroundColor_Click(object sender, EventArgs e)
         {
             //create a new box that will allow the user to pick basic and custom colors
@@ -44,7 +60,7 @@ namespace OfficeManager
             {
                 //changes the current color in the textbox to the current one picked
                 textboxMessage.BackColor = colorDlg.Color;
-
+                backgroundColor = colorDlg.Color;                
             }
         }
 
@@ -59,56 +75,19 @@ namespace OfficeManager
             //allows the user to chose any color from the box
             colorDlg.AnyColor = true;
 
-            
+
             //colorDlg.SolidColorOnly = false;
 
             //colorDlg.Color = Color.Red;
 
-
-
             if (colorDlg.ShowDialog() == DialogResult.OK)
             {
                 //the color choosen will be displayed once the user presses the okay button 
-                textboxMessage.ForeColor = colorDlg.Color;  
+                textboxMessage.ForeColor = colorDlg.Color;
+                textColor = colorDlg.Color;
             }
         }
 
-        private void btnPost_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textboxSubject_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textboxMessage_TextChanged(object sender, EventArgs e)
-        {
-
-
-
-
-
-
-
-
-        }
-
-        private void s(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-
-
-        }
+        
     }
 }
