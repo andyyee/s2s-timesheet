@@ -42,6 +42,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabSchedule = new System.Windows.Forms.TabPage();
             this.tabManager = new System.Windows.Forms.TabPage();
+            this.calendar1 = new OfficeManager.Calendar();
             this.tabs.SuspendLayout();
             this.tabHome.SuspendLayout();
             this.pnlHome.SuspendLayout();
@@ -49,6 +50,7 @@
             this.pnlPostItContainer.SuspendLayout();
             this.tabProfile.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabSchedule.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabs
@@ -192,6 +194,7 @@
             // 
             // tabSchedule
             // 
+            this.tabSchedule.Controls.Add(this.calendar1);
             this.tabSchedule.Location = new System.Drawing.Point(4, 22);
             this.tabSchedule.Name = "tabSchedule";
             this.tabSchedule.Padding = new System.Windows.Forms.Padding(3);
@@ -210,6 +213,15 @@
             this.tabManager.Text = "Manager Function";
             this.tabManager.UseVisualStyleBackColor = true;
             // 
+            // calendar1
+            // 
+            this.calendar1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.calendar1.Location = new System.Drawing.Point(0, 3);
+            this.calendar1.Margin = new System.Windows.Forms.Padding(0);
+            this.calendar1.Name = "calendar1";
+            this.calendar1.Size = new System.Drawing.Size(1000, 420);
+            this.calendar1.TabIndex = 0;
+            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,6 +238,7 @@
             this.pnlPostItContainer.ResumeLayout(false);
             this.tabProfile.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            this.tabSchedule.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -246,6 +259,7 @@
         private System.Windows.Forms.Panel pnlAnnouncements;
         private System.Windows.Forms.Panel pnlPostItContainer;
         private System.Windows.Forms.RichTextBox rchtxtbxPostItMessage;
+        private Calendar calendar1;
     }
 }
 
