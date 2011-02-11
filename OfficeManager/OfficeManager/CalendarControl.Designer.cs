@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsControlLibrary1
+﻿namespace OfficeManager
 {
-    partial class Week
+    partial class Calendar
     {
         /// <summary>
         /// Required designer variable.
@@ -76,7 +76,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.lblS6 = new System.Windows.Forms.Label();
-            this.dialog1 = new WindowsFormsControlLibrary2.Dialog();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,7 +92,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
             this.tableLayoutPanel1.Controls.Add(this.lblS630, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.lblS7, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.linkLabel29, 0, 30);
@@ -771,7 +770,7 @@
             this.label8.Location = new System.Drawing.Point(880, 1);
             this.label8.Margin = new System.Windows.Forms.Padding(0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(131, 20);
+            this.label8.Size = new System.Drawing.Size(132, 20);
             this.label8.TabIndex = 16;
             this.label8.Text = "Saturday";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -786,7 +785,7 @@
             this.label9.Location = new System.Drawing.Point(880, 22);
             this.label9.Margin = new System.Windows.Forms.Padding(0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(131, 20);
+            this.label9.Size = new System.Drawing.Size(132, 20);
             this.label9.TabIndex = 15;
             this.label9.Text = "Date";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -923,25 +922,14 @@
             this.lblS6.TabIndex = 53;
             this.lblS6.Click += new System.EventHandler(this.lblS6_Click);
             // 
-            // dialog1
-            // 
-            this.dialog1.AllowDrop = true;
-            this.dialog1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.dialog1.Location = new System.Drawing.Point(97, 75);
-            this.dialog1.Name = "dialog1";
-            this.dialog1.Size = new System.Drawing.Size(304, 170);
-            this.dialog1.TabIndex = 2;
-            this.dialog1.Visible = false;
-            // 
-            // Week
+            // Calendar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Controls.Add(this.dialog1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(0);
-            this.Name = "Week";
+            this.Name = "Calendar";
             this.Size = new System.Drawing.Size(1000, 420);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -999,6 +987,5 @@
         private System.Windows.Forms.Label lblS630;
         private System.Windows.Forms.Label lblS7;
         private System.Windows.Forms.Label lblS6;
-        private WindowsFormsControlLibrary2.Dialog dialog1;
     }
 }

@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace WindowsFormsControlLibrary1
+namespace OfficeManager
 {
-    public partial class Week : UserControl
+    public partial class Calendar : UserControl
     {
        
-        public Week()
+        public Calendar()
         {
             InitializeComponent();
         }
