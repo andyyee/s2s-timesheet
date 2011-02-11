@@ -70,6 +70,9 @@ namespace OfficeManager
 
         /*
          * This method handles the click event for the post it panel
+         * This will call the windows form responsible for setting up this data
+         * Note that the event will only be added to the post it if the label is "posted"
+         * otherwise it will be allowed to expire
          */
         private void pnlPostItContainer_MouseClick(Object sender, MouseEventArgs e)
         {
@@ -82,6 +85,11 @@ namespace OfficeManager
                 note.MouseClick += new MouseEventHandler(label_Click);
             }
         }
+
+        /*
+         * This method handles the mouseover event for each label added to the form
+         * This effectively tracks the addition of each label to the form
+         */
         public void label_Enter(Object sender, EventArgs e)
         {
 
@@ -91,6 +99,10 @@ namespace OfficeManager
             rchtxtbxPostItMessage.ForeColor = temp.ForeColor;
         }
 
+        /*
+         * This will be implemented later with the purpose of allowing editing of labels
+         * The database will be used to make sure that the user has permission to do this
+         */
         public void label_Click(Object sender, MouseEventArgs e)
         {
 
