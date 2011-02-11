@@ -49,7 +49,7 @@
     <Compile Include="CalendarControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CalendarControl.Designer.cs">
+    <Compile Include="CalendarControl.designer.cs">
       <DependentUpon>CalendarControl.cs</DependentUpon>
     </Compile>
     <Compile Include="formMain.cs">
