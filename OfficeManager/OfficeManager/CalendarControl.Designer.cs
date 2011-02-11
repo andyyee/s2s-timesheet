@@ -93,7 +93,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 136F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 137F));
             this.tableLayoutPanel1.Controls.Add(this.lblS630, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.lblS7, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.linkLabel29, 0, 30);
@@ -771,7 +771,7 @@
             this.label8.Location = new System.Drawing.Point(880, 1);
             this.label8.Margin = new System.Windows.Forms.Padding(0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(136, 20);
+            this.label8.Size = new System.Drawing.Size(137, 20);
             this.label8.TabIndex = 16;
             this.label8.Text = "Saturday";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -786,7 +786,7 @@
             this.label9.Location = new System.Drawing.Point(880, 22);
             this.label9.Margin = new System.Windows.Forms.Padding(0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(136, 20);
+            this.label9.Size = new System.Drawing.Size(137, 20);
             this.label9.TabIndex = 15;
             this.label9.Text = "Date";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
