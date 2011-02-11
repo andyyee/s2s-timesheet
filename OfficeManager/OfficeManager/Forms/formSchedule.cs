@@ -8,6 +8,10 @@ using System.Text;
 using System.Windows.Forms;
 using System.Collections;
 
+/**
+ * This form is a pop up for use with the CalendarControl.
+ * The user selected times from this dialog box.
+ * */
 namespace OfficeManager.Forms
 {
     public partial class formSchedule : Form
@@ -47,6 +51,11 @@ namespace OfficeManager.Forms
             }
         }
 
+        /**
+         * Constructor
+         * Must be passed the CalendarControl that opened the form in order to send back the times
+         * TODO: Be passed in the selected start time.
+         * */
         public formSchedule(CalendarControl parent)
         {
             this.parent = parent;
