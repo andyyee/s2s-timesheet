@@ -34,8 +34,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textboxSubject = new System.Windows.Forms.RichTextBox();
-            this.textboxMessage = new System.Windows.Forms.RichTextBox();
+            this.txtbxSubject = new System.Windows.Forms.RichTextBox();
+            this.txtbxMessage = new System.Windows.Forms.RichTextBox();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.btnBackgroundColor = new System.Windows.Forms.Button();
             this.btnTextColor = new System.Windows.Forms.Button();
@@ -99,22 +99,22 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Subject";
             // 
-            // textboxSubject
+            // txtbxSubject
             // 
-            this.textboxSubject.Location = new System.Drawing.Point(73, 43);
-            this.textboxSubject.Name = "textboxSubject";
-            this.textboxSubject.Size = new System.Drawing.Size(137, 23);
-            this.textboxSubject.TabIndex = 7;
-            this.textboxSubject.Text = "";
+            this.txtbxSubject.Location = new System.Drawing.Point(73, 43);
+            this.txtbxSubject.Name = "txtbxSubject";
+            this.txtbxSubject.Size = new System.Drawing.Size(130, 25);
+            this.txtbxSubject.TabIndex = 7;
+            this.txtbxSubject.Text = "";
             // 
-            // textboxMessage
+            // txtbxMessage
             // 
-            this.textboxMessage.BackColor = System.Drawing.SystemColors.Window;
-            this.textboxMessage.Location = new System.Drawing.Point(27, 102);
-            this.textboxMessage.Name = "textboxMessage";
-            this.textboxMessage.Size = new System.Drawing.Size(260, 91);
-            this.textboxMessage.TabIndex = 0;
-            this.textboxMessage.Text = "";
+            this.txtbxMessage.BackColor = System.Drawing.SystemColors.Window;
+            this.txtbxMessage.Location = new System.Drawing.Point(27, 102);
+            this.txtbxMessage.Name = "txtbxMessage";
+            this.txtbxMessage.Size = new System.Drawing.Size(260, 91);
+            this.txtbxMessage.TabIndex = 0;
+            this.txtbxMessage.Text = "";
             // 
             // btnBackgroundColor
             // 
@@ -145,14 +145,14 @@
             this.ClientSize = new System.Drawing.Size(387, 248);
             this.Controls.Add(this.btnTextColor);
             this.Controls.Add(this.btnBackgroundColor);
-            this.Controls.Add(this.textboxSubject);
+            this.Controls.Add(this.txtbxSubject);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnPost);
-            this.Controls.Add(this.textboxMessage);
+            this.Controls.Add(this.txtbxMessage);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "FormPostIt";
@@ -170,10 +170,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RichTextBox textboxSubject;
+        private System.Windows.Forms.RichTextBox txtbxSubject;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Button btnBackgroundColor;
         private System.Windows.Forms.Button btnTextColor;
-        public System.Windows.Forms.RichTextBox textboxMessage;
+        public System.Windows.Forms.RichTextBox txtbxMessage;
     }
 }

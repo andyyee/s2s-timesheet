@@ -12,38 +12,45 @@ namespace OfficeManager
     public partial class FormPostIt : Form
     {
         Color backgroundColor; 
-        Color textColor;
-        public FormPostIt()
+        Color textColor = Color.Black;
+        private Point location;
+        public Panel holder;
+        public postIt note;
+        public Boolean success = false;
+        public FormPostIt(Point location, Panel holder, postIt note)
         {
             InitializeComponent();
             textColor = new Color();
-            backgroundColor = new Color(); 
+            backgroundColor = new Color();
+            this.location = location;
+            this.holder = holder;
+            this.note = note;
         }
 
-
-        private void Message_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Name_Click(object sender, EventArgs e)
-        {
-
-        }
         private void btnPost_Click(object sender, EventArgs e)
         {
-
+            holder.Controls.Add(note);
+            note.Location = location;
+            note.Text = txtbxSubject.Text;
+            note.message = txtbxMessage.Text;
+            note.BackColor = backgroundColor;
+            note.ForeColor = textColor;
+            note.Size = new Size(130, 25);
+            success = true;
+            this.Dispose();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
             textColor = Color.Black;
             backgroundColor = Color.Black;
+            txtbxMessage.Text = "";
+            txtbxSubject.Text = "";
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Dispose();
         }
         
         private void btnBackgroundColor_Click(object sender, EventArgs e)
@@ -59,7 +66,7 @@ namespace OfficeManager
             if (colorDlg.ShowDialog() == DialogResult.OK)
             {
                 //changes the current color in the textbox to the current one picked
-                textboxMessage.BackColor = colorDlg.Color;
+                txtbxMessage.BackColor = colorDlg.Color;
                 backgroundColor = colorDlg.Color;                
             }
         }
@@ -83,7 +90,7 @@ namespace OfficeManager
             if (colorDlg.ShowDialog() == DialogResult.OK)
             {
                 //the color choosen will be displayed once the user presses the okay button 
-                textboxMessage.ForeColor = colorDlg.Color;
+                txtbxMessage.ForeColor = colorDlg.Color;
                 textColor = colorDlg.Color;
             }
         }
