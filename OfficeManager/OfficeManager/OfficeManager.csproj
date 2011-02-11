@@ -52,16 +52,16 @@
     <Compile Include="CalendarControl.designer.cs">
       <DependentUpon>CalendarControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="formMain.cs">
+    <Compile Include="Forms\formMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formMain.Designer.cs">
+    <Compile Include="Forms\formMain.Designer.cs">
       <DependentUpon>formMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPostIt.cs">
+    <Compile Include="Forms\FormPostIt.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPostIt.Designer.cs">
+    <Compile Include="Forms\FormPostIt.Designer.cs">
       <DependentUpon>FormPostIt.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\formSchedule.cs">
@@ -78,10 +78,10 @@
     <EmbeddedResource Include="CalendarControl.resx">
       <DependentUpon>CalendarControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formMain.resx">
+    <EmbeddedResource Include="Forms\formMain.resx">
       <DependentUpon>formMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPostIt.resx">
+    <EmbeddedResource Include="Forms\FormPostIt.resx">
       <DependentUpon>FormPostIt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\formSchedule.resx">
