@@ -52,6 +52,11 @@ namespace OfficeManager
         {
             this.Dispose();
         }
+
+        private void txtbxSubject_TextChanged(object sender, EventArgs e)
+        {
+            lblCounter.Text = txtbxSubject.Text.Length.ToString();
+        }    
         
         private void btnBackgroundColor_Click(object sender, EventArgs e)
         {
@@ -83,11 +88,6 @@ namespace OfficeManager
             //allows the user to chose any color from the box
             colorDlg.AnyColor = true;
 
-
-            //colorDlg.SolidColorOnly = false;
-
-            //colorDlg.Color = Color.Red;
-
             if (colorDlg.ShowDialog() == DialogResult.OK)
             {
                 //the color chosen will be displayed once the user presses the okay button 
@@ -96,7 +96,5 @@ namespace OfficeManager
                 textColor = colorDlg.Color;
             }
         }
-
-        
     }
 }
