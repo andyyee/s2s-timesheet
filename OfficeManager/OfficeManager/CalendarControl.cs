@@ -6,13 +6,14 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using OfficeManager.Forms;
 
 namespace OfficeManager
 {
-    public partial class Calendar : UserControl
+    public partial class CalendarControl : UserControl
     {
-       
-        public Calendar()
+        private formSchedule scheduler;
+        public CalendarControl()
         {
             InitializeComponent();
         }
@@ -109,7 +110,7 @@ namespace OfficeManager
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            tableLayoutPanel1.SetRowSpan(lblS6, 1);
+            
         }
 
         private void linkLabel10_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -134,14 +135,14 @@ namespace OfficeManager
 
         private void lblS6_Click(object sender, EventArgs e)
         {
-            TableLayoutPanelCellPosition cp = tableLayoutPanel1.GetCellPosition(lblS6);
-
-            lblS6.BackColor = Color.Azure;
-            tableLayoutPanel1.SetRowSpan(lblS6, 4);
-
+            scheduler = new Forms.formSchedule(this);
+            scheduler.ShowDialog();
         }
-        
 
+        public void SaveClickEvent(double startTime, double endTime)
+        {
+            scheduler.Close();
+        }
 
     }
 }

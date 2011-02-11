@@ -41,8 +41,8 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabSchedule = new System.Windows.Forms.TabPage();
+            this.CalendarSchedule = new OfficeManager.CalendarControl();
             this.tabManager = new System.Windows.Forms.TabPage();
-            this.calendar1 = new OfficeManager.Calendar();
             this.tabs.SuspendLayout();
             this.tabHome.SuspendLayout();
             this.pnlHome.SuspendLayout();
@@ -64,7 +64,7 @@
             this.tabs.Location = new System.Drawing.Point(0, 0);
             this.tabs.Name = "tabs";
             this.tabs.SelectedIndex = 0;
-            this.tabs.Size = new System.Drawing.Size(891, 493);
+            this.tabs.Size = new System.Drawing.Size(1019, 493);
             this.tabs.TabIndex = 0;
             // 
             // tabHome
@@ -194,14 +194,24 @@
             // 
             // tabSchedule
             // 
-            this.tabSchedule.Controls.Add(this.calendar1);
+            this.tabSchedule.Controls.Add(this.CalendarSchedule);
             this.tabSchedule.Location = new System.Drawing.Point(4, 22);
             this.tabSchedule.Name = "tabSchedule";
             this.tabSchedule.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSchedule.Size = new System.Drawing.Size(883, 467);
+            this.tabSchedule.Size = new System.Drawing.Size(1011, 467);
             this.tabSchedule.TabIndex = 3;
             this.tabSchedule.Text = "View Schedule";
             this.tabSchedule.UseVisualStyleBackColor = true;
+            // 
+            // CalendarSchedule
+            // 
+            this.CalendarSchedule.BackColor = System.Drawing.SystemColors.Control;
+            this.CalendarSchedule.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CalendarSchedule.Location = new System.Drawing.Point(3, 3);
+            this.CalendarSchedule.Margin = new System.Windows.Forms.Padding(0);
+            this.CalendarSchedule.Name = "CalendarSchedule";
+            this.CalendarSchedule.Size = new System.Drawing.Size(1005, 461);
+            this.CalendarSchedule.TabIndex = 0;
             // 
             // tabManager
             // 
@@ -213,20 +223,11 @@
             this.tabManager.Text = "Manager Function";
             this.tabManager.UseVisualStyleBackColor = true;
             // 
-            // calendar1
-            // 
-            this.calendar1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.calendar1.Location = new System.Drawing.Point(0, 3);
-            this.calendar1.Margin = new System.Windows.Forms.Padding(0);
-            this.calendar1.Name = "calendar1";
-            this.calendar1.Size = new System.Drawing.Size(1000, 420);
-            this.calendar1.TabIndex = 0;
-            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(891, 493);
+            this.ClientSize = new System.Drawing.Size(1019, 493);
             this.Controls.Add(this.tabs);
             this.Name = "formMain";
             this.Text = "Form1";
@@ -259,7 +260,7 @@
         private System.Windows.Forms.Panel pnlAnnouncements;
         private System.Windows.Forms.Panel pnlPostItContainer;
         private System.Windows.Forms.RichTextBox rchtxtbxPostItMessage;
-        private Calendar calendar1;
+        private CalendarControl CalendarSchedule;
     }
 }
 

@@ -1,6 +1,6 @@
 ﻿namespace OfficeManager
 {
-    partial class Calendar
+    partial class CalendarControl
     {
         /// <summary>
         /// Required designer variable.
@@ -76,12 +76,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.lblS6 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.SlateGray;
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel1.ColumnCount = 8;
@@ -92,7 +93,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 136F));
             this.tableLayoutPanel1.Controls.Add(this.lblS630, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.lblS7, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.linkLabel29, 0, 30);
@@ -140,8 +141,9 @@
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.linkLabel1, 0, 23);
             this.tableLayoutPanel1.Controls.Add(this.lblS6, 1, 2);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 30;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
@@ -175,17 +177,16 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1000, 420);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(996, 459);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // lblS630
             // 
             this.lblS630.AutoSize = true;
-            this.lblS630.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblS630.Location = new System.Drawing.Point(109, 60);
             this.lblS630.Margin = new System.Windows.Forms.Padding(3);
             this.lblS630.Name = "lblS630";
-            this.lblS630.Size = new System.Drawing.Size(122, 7);
+            this.lblS630.Size = new System.Drawing.Size(0, 7);
             this.lblS630.TabIndex = 55;
             // 
             // lblS7
@@ -207,7 +208,7 @@
             this.linkLabel29.LinkColor = System.Drawing.SystemColors.ControlLightLight;
             this.linkLabel29.Location = new System.Drawing.Point(4, 435);
             this.linkLabel29.Name = "linkLabel29";
-            this.linkLabel29.Size = new System.Drawing.Size(98, 20);
+            this.linkLabel29.Size = new System.Drawing.Size(98, 23);
             this.linkLabel29.TabIndex = 52;
             this.linkLabel29.TabStop = true;
             this.linkLabel29.Text = "9:00 PM";
@@ -770,7 +771,7 @@
             this.label8.Location = new System.Drawing.Point(880, 1);
             this.label8.Margin = new System.Windows.Forms.Padding(0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(132, 20);
+            this.label8.Size = new System.Drawing.Size(136, 20);
             this.label8.TabIndex = 16;
             this.label8.Text = "Saturday";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -785,7 +786,7 @@
             this.label9.Location = new System.Drawing.Point(880, 22);
             this.label9.Margin = new System.Windows.Forms.Padding(0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(132, 20);
+            this.label9.Size = new System.Drawing.Size(136, 20);
             this.label9.TabIndex = 15;
             this.label9.Text = "Date";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -922,17 +923,28 @@
             this.lblS6.TabIndex = 53;
             this.lblS6.Click += new System.EventHandler(this.lblS6_Click);
             // 
-            // Calendar
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.tableLayoutPanel1);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1000, 463);
+            this.panel1.TabIndex = 2;
+            // 
+            // CalendarControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(0);
-            this.Name = "Calendar";
-            this.Size = new System.Drawing.Size(1000, 420);
+            this.Name = "CalendarControl";
+            this.Size = new System.Drawing.Size(1007, 466);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -987,5 +999,6 @@
         private System.Windows.Forms.Label lblS630;
         private System.Windows.Forms.Label lblS7;
         private System.Windows.Forms.Label lblS6;
+        private System.Windows.Forms.Panel panel1;
     }
 }
