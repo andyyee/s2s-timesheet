@@ -103,7 +103,7 @@
             // 
             this.txtbxSubject.Location = new System.Drawing.Point(73, 43);
             this.txtbxSubject.Name = "txtbxSubject";
-            this.txtbxSubject.Size = new System.Drawing.Size(130, 25);
+            this.txtbxSubject.Size = new System.Drawing.Size(130, 20);
             this.txtbxSubject.TabIndex = 7;
             this.txtbxSubject.Text = "";
             // 

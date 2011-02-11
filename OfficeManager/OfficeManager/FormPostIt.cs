@@ -35,7 +35,7 @@ namespace OfficeManager
             note.message = txtbxMessage.Text;
             note.BackColor = backgroundColor;
             note.ForeColor = textColor;
-            note.Size = new Size(130, 25);
+            note.Size = new Size(130, 20);
             success = true;
             this.Dispose();
         }
