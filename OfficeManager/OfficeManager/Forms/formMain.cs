@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using OfficeManager.DatabaseClasses;
 
 namespace OfficeManager
 {
@@ -13,6 +14,9 @@ namespace OfficeManager
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //PostItDBAccess post = new PostItDBAccess();
+            
+           //rchtxtbxPostItMessage.Text =  "" + post.getPostItByID("nothing");
             //Delete the Schedule tab
             //tabManager.Dispose();
 

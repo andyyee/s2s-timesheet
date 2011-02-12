@@ -73,7 +73,7 @@
             this.tabHome.Location = new System.Drawing.Point(4, 22);
             this.tabHome.Name = "tabHome";
             this.tabHome.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHome.Size = new System.Drawing.Size(883, 467);
+            this.tabHome.Size = new System.Drawing.Size(1011, 467);
             this.tabHome.TabIndex = 0;
             this.tabHome.Text = "Home";
             this.tabHome.UseVisualStyleBackColor = true;
@@ -84,7 +84,7 @@
             this.pnlHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlHome.Location = new System.Drawing.Point(3, 3);
             this.pnlHome.Name = "pnlHome";
-            this.pnlHome.Size = new System.Drawing.Size(877, 461);
+            this.pnlHome.Size = new System.Drawing.Size(1005, 461);
             this.pnlHome.TabIndex = 0;
             // 
             // tblLytPostItNote
@@ -101,7 +101,7 @@
             this.tblLytPostItNote.Name = "tblLytPostItNote";
             this.tblLytPostItNote.RowCount = 1;
             this.tblLytPostItNote.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tblLytPostItNote.Size = new System.Drawing.Size(880, 467);
+            this.tblLytPostItNote.Size = new System.Drawing.Size(1008, 467);
             this.tblLytPostItNote.TabIndex = 0;
             // 
             // pnlAnnouncements
@@ -111,7 +111,7 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlAnnouncements.Location = new System.Drawing.Point(3, 3);
             this.pnlAnnouncements.Name = "pnlAnnouncements";
-            this.pnlAnnouncements.Size = new System.Drawing.Size(270, 461);
+            this.pnlAnnouncements.Size = new System.Drawing.Size(310, 461);
             this.pnlAnnouncements.TabIndex = 0;
             // 
             // pnlPostItContainer
@@ -120,9 +120,9 @@
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlPostItContainer.Controls.Add(this.rchtxtbxPostItMessage);
-            this.pnlPostItContainer.Location = new System.Drawing.Point(279, 3);
+            this.pnlPostItContainer.Location = new System.Drawing.Point(319, 3);
             this.pnlPostItContainer.Name = "pnlPostItContainer";
-            this.pnlPostItContainer.Size = new System.Drawing.Size(598, 461);
+            this.pnlPostItContainer.Size = new System.Drawing.Size(686, 461);
             this.pnlPostItContainer.TabIndex = 1;
             this.pnlPostItContainer.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlPostItContainer_MouseClick);
             // 
@@ -133,7 +133,7 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.rchtxtbxPostItMessage.Location = new System.Drawing.Point(3, 417);
             this.rchtxtbxPostItMessage.Name = "rchtxtbxPostItMessage";
-            this.rchtxtbxPostItMessage.Size = new System.Drawing.Size(598, 39);
+            this.rchtxtbxPostItMessage.Size = new System.Drawing.Size(686, 39);
             this.rchtxtbxPostItMessage.TabIndex = 0;
             this.rchtxtbxPostItMessage.Text = "";
             // 
@@ -142,7 +142,7 @@
             this.tabStatus.Location = new System.Drawing.Point(4, 22);
             this.tabStatus.Name = "tabStatus";
             this.tabStatus.Padding = new System.Windows.Forms.Padding(3);
-            this.tabStatus.Size = new System.Drawing.Size(883, 467);
+            this.tabStatus.Size = new System.Drawing.Size(1011, 467);
             this.tabStatus.TabIndex = 1;
             this.tabStatus.Text = "Status Overview";
             this.tabStatus.UseVisualStyleBackColor = true;
@@ -155,7 +155,7 @@
             this.tabProfile.Location = new System.Drawing.Point(4, 22);
             this.tabProfile.Name = "tabProfile";
             this.tabProfile.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProfile.Size = new System.Drawing.Size(883, 467);
+            this.tabProfile.Size = new System.Drawing.Size(1011, 467);
             this.tabProfile.TabIndex = 2;
             this.tabProfile.Text = "View/Edit Profile";
             // 
@@ -218,7 +218,7 @@
             this.tabManager.Location = new System.Drawing.Point(4, 22);
             this.tabManager.Name = "tabManager";
             this.tabManager.Padding = new System.Windows.Forms.Padding(3);
-            this.tabManager.Size = new System.Drawing.Size(883, 467);
+            this.tabManager.Size = new System.Drawing.Size(1011, 467);
             this.tabManager.TabIndex = 4;
             this.tabManager.Text = "Manager Function";
             this.tabManager.UseVisualStyleBackColor = true;

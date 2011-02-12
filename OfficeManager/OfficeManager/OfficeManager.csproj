@@ -35,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,6 +53,9 @@
     <Compile Include="CalendarControl.designer.cs">
       <DependentUpon>CalendarControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseClasses\DBAccess.cs" />
+    <Compile Include="DatabaseClasses\EmployeeDBAccess.cs" />
+    <Compile Include="DatabaseClasses\PostItDBAccess.cs" />
     <Compile Include="Forms\formMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +100,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DatabaseClasses\App.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -106,9 +111,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DatabaseClasses\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
