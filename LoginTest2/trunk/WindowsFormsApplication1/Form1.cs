@@ -12,16 +12,21 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
-        Hashtable fakeDB;
+        Hashtable fakeDB, fakePass;
         
         public Form1()
         {
             fakeDB = new Hashtable();
-
+            fakePass = new Hashtable();
             fakeDB.Add(39290,"Joe Smith");
             fakeDB.Add(28939,"Bob Allen");
             fakeDB.Add(19489, "Sam Sneed");
             fakeDB.Add(29190, "Joe Louis");
+
+            fakePass.Add(39290, "cookie");
+            fakePass.Add(28939, "blueberries");
+            fakePass.Add(19489, "secure123");
+            fakePass.Add(29190, "abc123");
 
             InitializeComponent();
         }
@@ -39,7 +44,8 @@ namespace WindowsFormsApplication1
         private void button1_Click(object sender, EventArgs e)
         {
             int text = System.Convert.ToInt32(this.maskedTextBox1.Text);
-            if (fakeDB.ContainsKey(text))
+            String pass = this.textBox1.Text;
+            if (fakeDB.ContainsKey(text) && fakePass.ContainsKey(text) && fakePass[text].Equals(pass))
             {
                 MessageBox.Show("Welcome, " + fakeDB[text] + ". We have been expecting you.\n");
             }
