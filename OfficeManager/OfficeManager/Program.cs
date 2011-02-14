@@ -16,7 +16,12 @@ namespace OfficeManager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formMain());
+            formLogin loginInstance = new formLogin();
+            Application.Run(loginInstance);
+            if (loginInstance.getLoginValid())
+            {
+                Application.Run(new formMain());
+            }
         }
     }
 }
