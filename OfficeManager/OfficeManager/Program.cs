@@ -20,6 +20,9 @@ namespace OfficeManager
             Application.Run(loginInstance);
             if (loginInstance.getLoginValid())
             {
+                int userid = loginInstance.getLoginId();
+                String username = loginInstance.getLoginName();
+                MessageBox.Show("Welcome, " + username + ".");
                 Application.Run(new formMain());
             }
         }

@@ -14,6 +14,8 @@ namespace OfficeManager
     {
         Hashtable fakeDB, fakePass;
         bool validLogin = false;
+        int userid = -1;
+        String username="";
 
         public formLogin()
         {
@@ -39,6 +41,16 @@ namespace OfficeManager
             return validLogin;
         }
 
+        public int getLoginId()
+        {
+            return userid;
+        }
+
+        public String getLoginName()
+        {
+            return username;
+        }
+
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -55,13 +67,14 @@ namespace OfficeManager
             String pass = this.textBox1.Text;
             if (fakeDB.ContainsKey(text) && fakePass.ContainsKey(text) && fakePass[text].Equals(pass))
             {
-                MessageBox.Show("Welcome, " + fakeDB[text] + ". We have been expecting you.\n");
                 validLogin = true;
+                userid = text;
+                username = (String)fakeDB[text];
                 this.Close();
             }
             else
             {
-                MessageBox.Show("You are not welcome in this system.\n");
+                MessageBox.Show("Invalid username and/or password. Please try again.");
             }
 
         }
