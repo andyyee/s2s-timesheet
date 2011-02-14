@@ -56,6 +56,10 @@
     <Compile Include="DatabaseClasses\DBAccess.cs" />
     <Compile Include="DatabaseClasses\EmployeeDBAccess.cs" />
     <Compile Include="DatabaseClasses\PostItDBAccess.cs" />
+    <Compile Include="Forms\formLogin.cs" />
+    <Compile Include="Forms\formLogin.Designer.cs">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\formMain.cs">
       <SubType>Form</SubType>
     </Compile>
