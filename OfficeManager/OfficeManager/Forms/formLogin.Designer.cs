@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsApplication1
+﻿namespace OfficeManager
 {
-    partial class Form1
+    partial class formLogin
     {
         /// <summary>
         /// Required designer variable.

@@ -8,13 +8,13 @@ using System.Text;
 using System.Windows.Forms;
 using System.Collections;
 
-namespace WindowsFormsApplication1
+namespace OfficeManager
 {
-    public partial class Form1 : Form
+    public partial class formLogin : Form
     {
         Hashtable fakeDB, fakePass;
         
-        public Form1()
+        public formLogin()
         {
             fakeDB = new Hashtable();
             fakePass = new Hashtable();
