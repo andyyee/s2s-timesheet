@@ -41,8 +41,8 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabSchedule = new System.Windows.Forms.TabPage();
-            this.tabManager = new System.Windows.Forms.TabPage();
             this.CalendarSchedule = new OfficeManager.CalendarControl();
+            this.tabManager = new System.Windows.Forms.TabPage();
             this.tabs.SuspendLayout();
             this.tabHome.SuspendLayout();
             this.pnlHome.SuspendLayout();
@@ -117,6 +117,7 @@
             // 
             this.pnlPostItContainer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlPostItContainer.BackColor = System.Drawing.Color.Transparent;
+            this.pnlPostItContainer.BackgroundImage = global::OfficeManager.Properties.Resources.fzm_seamless_corkboard_texture_01__500x500_;
             this.pnlPostItContainer.Controls.Add(this.rchtxtbxPostItMessage);
             this.pnlPostItContainer.Location = new System.Drawing.Point(319, 3);
             this.pnlPostItContainer.Name = "pnlPostItContainer";
@@ -199,16 +200,6 @@
             this.tabSchedule.Text = "View Schedule";
             this.tabSchedule.UseVisualStyleBackColor = true;
             // 
-            // tabManager
-            // 
-            this.tabManager.Location = new System.Drawing.Point(4, 22);
-            this.tabManager.Name = "tabManager";
-            this.tabManager.Padding = new System.Windows.Forms.Padding(3);
-            this.tabManager.Size = new System.Drawing.Size(1011, 467);
-            this.tabManager.TabIndex = 4;
-            this.tabManager.Text = "Manager Function";
-            this.tabManager.UseVisualStyleBackColor = true;
-            // 
             // CalendarSchedule
             // 
             this.CalendarSchedule.BackColor = System.Drawing.SystemColors.Control;
@@ -218,6 +209,16 @@
             this.CalendarSchedule.Name = "CalendarSchedule";
             this.CalendarSchedule.Size = new System.Drawing.Size(1005, 461);
             this.CalendarSchedule.TabIndex = 0;
+            // 
+            // tabManager
+            // 
+            this.tabManager.Location = new System.Drawing.Point(4, 22);
+            this.tabManager.Name = "tabManager";
+            this.tabManager.Padding = new System.Windows.Forms.Padding(3);
+            this.tabManager.Size = new System.Drawing.Size(1011, 467);
+            this.tabManager.TabIndex = 4;
+            this.tabManager.Text = "Manager Function";
+            this.tabManager.UseVisualStyleBackColor = true;
             // 
             // formMain
             // 
