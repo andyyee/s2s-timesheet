@@ -88,9 +88,7 @@
             // 
             // tblLytPostItNote
             // 
-            this.tblLytPostItNote.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tblLytPostItNote.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tblLytPostItNote.ColumnCount = 2;
             this.tblLytPostItNote.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.36364F));
             this.tblLytPostItNote.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.63636F));
