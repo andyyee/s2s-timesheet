@@ -66,5 +66,12 @@ namespace OfficeManager.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        internal static System.Drawing.Bitmap fzm_seamless_corkboard1 {
+            get {
+                object obj = ResourceManager.GetObject("fzm-seamless.corkboard1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

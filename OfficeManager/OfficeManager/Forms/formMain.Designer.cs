@@ -117,7 +117,8 @@
             // 
             this.pnlPostItContainer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlPostItContainer.BackColor = System.Drawing.Color.Transparent;
-            this.pnlPostItContainer.BackgroundImage = global::OfficeManager.Properties.Resources.fzm_seamless_corkboard_texture_01__500x500_;
+            this.pnlPostItContainer.BackgroundImage = global::OfficeManager.Properties.Resources.fzm_seamless_corkboard1;
+            this.pnlPostItContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlPostItContainer.Controls.Add(this.rchtxtbxPostItMessage);
             this.pnlPostItContainer.Location = new System.Drawing.Point(319, 3);
             this.pnlPostItContainer.Name = "pnlPostItContainer";
