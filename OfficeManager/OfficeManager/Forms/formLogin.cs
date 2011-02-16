@@ -70,7 +70,7 @@ namespace OfficeManager
                 validLogin = true;
                 userid = text;
                 username = (String)fakeDB[text];
-                this.Close();
+                this.Dispose();
             }
             else
             {
@@ -82,6 +82,11 @@ namespace OfficeManager
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

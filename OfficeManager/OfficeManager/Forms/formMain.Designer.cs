@@ -41,8 +41,8 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabSchedule = new System.Windows.Forms.TabPage();
-            this.CalendarSchedule = new OfficeManager.CalendarControl();
             this.tabManager = new System.Windows.Forms.TabPage();
+            this.CalendarSchedule = new OfficeManager.CalendarControl();
             this.tabs.SuspendLayout();
             this.tabHome.SuspendLayout();
             this.pnlHome.SuspendLayout();
@@ -106,9 +106,8 @@
             // 
             // pnlAnnouncements
             // 
-            this.pnlAnnouncements.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlAnnouncements.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlAnnouncements.BackColor = System.Drawing.Color.Transparent;
             this.pnlAnnouncements.Location = new System.Drawing.Point(3, 3);
             this.pnlAnnouncements.Name = "pnlAnnouncements";
             this.pnlAnnouncements.Size = new System.Drawing.Size(310, 461);
@@ -116,9 +115,8 @@
             // 
             // pnlPostItContainer
             // 
-            this.pnlPostItContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlPostItContainer.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlPostItContainer.BackColor = System.Drawing.Color.Transparent;
             this.pnlPostItContainer.Controls.Add(this.rchtxtbxPostItMessage);
             this.pnlPostItContainer.Location = new System.Drawing.Point(319, 3);
             this.pnlPostItContainer.Name = "pnlPostItContainer";
@@ -128,9 +126,7 @@
             // 
             // rchtxtbxPostItMessage
             // 
-            this.rchtxtbxPostItMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.rchtxtbxPostItMessage.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rchtxtbxPostItMessage.Location = new System.Drawing.Point(3, 417);
             this.rchtxtbxPostItMessage.Name = "rchtxtbxPostItMessage";
             this.rchtxtbxPostItMessage.Size = new System.Drawing.Size(686, 39);
@@ -203,16 +199,6 @@
             this.tabSchedule.Text = "View Schedule";
             this.tabSchedule.UseVisualStyleBackColor = true;
             // 
-            // CalendarSchedule
-            // 
-            this.CalendarSchedule.BackColor = System.Drawing.SystemColors.Control;
-            this.CalendarSchedule.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CalendarSchedule.Location = new System.Drawing.Point(3, 3);
-            this.CalendarSchedule.Margin = new System.Windows.Forms.Padding(0);
-            this.CalendarSchedule.Name = "CalendarSchedule";
-            this.CalendarSchedule.Size = new System.Drawing.Size(1005, 461);
-            this.CalendarSchedule.TabIndex = 0;
-            // 
             // tabManager
             // 
             this.tabManager.Location = new System.Drawing.Point(4, 22);
@@ -223,6 +209,16 @@
             this.tabManager.Text = "Manager Function";
             this.tabManager.UseVisualStyleBackColor = true;
             // 
+            // CalendarSchedule
+            // 
+            this.CalendarSchedule.BackColor = System.Drawing.SystemColors.Control;
+            this.CalendarSchedule.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CalendarSchedule.Location = new System.Drawing.Point(3, 3);
+            this.CalendarSchedule.Margin = new System.Windows.Forms.Padding(0);
+            this.CalendarSchedule.Name = "CalendarSchedule";
+            this.CalendarSchedule.Size = new System.Drawing.Size(1005, 461);
+            this.CalendarSchedule.TabIndex = 0;
+            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -230,7 +226,7 @@
             this.ClientSize = new System.Drawing.Size(1019, 493);
             this.Controls.Add(this.tabs);
             this.Name = "formMain";
-            this.Text = "Office Manager";
+            this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabs.ResumeLayout(false);
             this.tabHome.ResumeLayout(false);
