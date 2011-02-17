@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.tabs = new System.Windows.Forms.TabControl();
+            this.tabHome = new System.Windows.Forms.TabPage();
             this.tabCommunication = new System.Windows.Forms.TabPage();
             this.pnlHome = new System.Windows.Forms.Panel();
             this.tblLytPostItNote = new System.Windows.Forms.TableLayoutPanel();
@@ -43,7 +44,7 @@
             this.tabSchedule = new System.Windows.Forms.TabPage();
             this.CalendarSchedule = new OfficeManager.CalendarControl();
             this.tabManager = new System.Windows.Forms.TabPage();
-            this.tabHome = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabs.SuspendLayout();
             this.tabCommunication.SuspendLayout();
             this.pnlHome.SuspendLayout();
@@ -62,11 +63,22 @@
             this.tabs.Controls.Add(this.tabProfile);
             this.tabs.Controls.Add(this.tabSchedule);
             this.tabs.Controls.Add(this.tabManager);
+            this.tabs.Controls.Add(this.tabPage3);
             this.tabs.Location = new System.Drawing.Point(0, 0);
             this.tabs.Name = "tabs";
             this.tabs.SelectedIndex = 0;
             this.tabs.Size = new System.Drawing.Size(1019, 493);
             this.tabs.TabIndex = 0;
+            // 
+            // tabHome
+            // 
+            this.tabHome.Location = new System.Drawing.Point(4, 22);
+            this.tabHome.Name = "tabHome";
+            this.tabHome.Padding = new System.Windows.Forms.Padding(3);
+            this.tabHome.Size = new System.Drawing.Size(1011, 467);
+            this.tabHome.TabIndex = 5;
+            this.tabHome.Text = "Home";
+            this.tabHome.UseVisualStyleBackColor = true;
             // 
             // tabCommunication
             // 
@@ -153,7 +165,7 @@
             this.tabProfile.Padding = new System.Windows.Forms.Padding(3);
             this.tabProfile.Size = new System.Drawing.Size(1011, 467);
             this.tabProfile.TabIndex = 2;
-            this.tabProfile.Text = "View/Edit Profile";
+            this.tabProfile.Text = "View/Edit (OLD!)";
             // 
             // tabControl1
             // 
@@ -219,15 +231,15 @@
             this.tabManager.Text = "Manager Function";
             this.tabManager.UseVisualStyleBackColor = true;
             // 
-            // tabHome
+            // tabPage3
             // 
-            this.tabHome.Location = new System.Drawing.Point(4, 22);
-            this.tabHome.Name = "tabHome";
-            this.tabHome.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHome.Size = new System.Drawing.Size(1011, 467);
-            this.tabHome.TabIndex = 5;
-            this.tabHome.Text = "Home";
-            this.tabHome.UseVisualStyleBackColor = true;
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1011, 467);
+            this.tabPage3.TabIndex = 6;
+            this.tabPage3.Text = "Profile";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // formMain
             // 
@@ -268,6 +280,7 @@
         private System.Windows.Forms.RichTextBox rchtxtbxPostItMessage;
         private CalendarControl CalendarSchedule;
         private System.Windows.Forms.TabPage tabHome;
+        private System.Windows.Forms.TabPage tabPage3;
     }
 }
 
