@@ -22,7 +22,8 @@ namespace OfficeManager
             {
                 int userid = loginInstance.getLoginId();
                 String username = loginInstance.getLoginName();
-                MessageBox.Show("Welcome, " + username + ".");
+                String realname = loginInstance.getRealName();
+                MessageBox.Show("Welcome, " + realname + ".");
                 Application.Run(new formMain());
             }
         }

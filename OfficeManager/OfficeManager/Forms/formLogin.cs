@@ -12,15 +12,24 @@ namespace OfficeManager
 {
     public partial class formLogin : Form
     {
-        Hashtable fakeDB, fakePass;
+        Hashtable fakeDB, fakePass, fakeUser;
         bool validLogin = false;
         int userid = -1;
         String username="";
+        String realname="";
 
         public formLogin()
         {
             fakeDB = new Hashtable();
             fakePass = new Hashtable();
+            fakeUser = new Hashtable();
+
+            fakeUser.Add("", 00000);
+            fakeUser.Add("smith", 39290);
+            fakeUser.Add("allen", 28939);
+            fakeUser.Add("sneed", 19489);
+            fakeUser.Add("louis", 29190);
+
             fakeDB.Add(00000, "Bob Lewis");
             fakeDB.Add(39290, "Joe Smith");
             fakeDB.Add(28939, "Bob Allen");
@@ -51,6 +60,11 @@ namespace OfficeManager
             return username;
         }
 
+        public String getRealName()
+        {
+            return realname;
+        }
+        
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -63,13 +77,14 @@ namespace OfficeManager
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int text = this.maskedTextBox1.Text.Equals("")?0:System.Convert.ToInt32(this.maskedTextBox1.Text);
+            String text = this.textBox2.Text;
             String pass = this.textBox1.Text;
-            if (fakeDB.ContainsKey(text) && fakePass.ContainsKey(text) && fakePass[text].Equals(pass))
+            if (fakeUser.ContainsKey(text) && fakePass.ContainsKey(fakeUser[text]) && fakePass[fakeUser[text]].Equals(pass))
             {
                 validLogin = true;
-                userid = text;
-                username = (String)fakeDB[text];
+                userid = (int)fakeUser[text];
+                realname = (String)fakeDB[fakeUser[text]];
+                username = text;
                 this.Dispose();
             }
             else
@@ -87,6 +102,11 @@ namespace OfficeManager
         private void button2_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
