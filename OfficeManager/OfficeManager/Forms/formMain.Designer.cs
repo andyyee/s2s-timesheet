@@ -33,7 +33,6 @@
             this.tabCommunication = new System.Windows.Forms.TabPage();
             this.tblLytPostItNote = new System.Windows.Forms.TableLayoutPanel();
             this.pnlPostItContainer = new System.Windows.Forms.Panel();
-            this.rchtxtbxPostItMessage = new System.Windows.Forms.RichTextBox();
             this.pnlAnnouncements = new System.Windows.Forms.Panel();
             this.pnlHome = new System.Windows.Forms.Panel();
             this.tabStatus = new System.Windows.Forms.TabPage();
@@ -61,6 +60,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.calendarSchedule = new OfficeManager.CalendarControl();
+            this.lblPostItMessage = new System.Windows.Forms.Label();
             this.tabs.SuspendLayout();
             this.tabCommunication.SuspendLayout();
             this.tblLytPostItNote.SuspendLayout();
@@ -131,23 +131,13 @@
             this.pnlPostItContainer.BackColor = System.Drawing.Color.Transparent;
             this.pnlPostItContainer.BackgroundImage = global::OfficeManager.Properties.Resources.fzm_seamless_corkboard1;
             this.pnlPostItContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlPostItContainer.Controls.Add(this.rchtxtbxPostItMessage);
+            this.pnlPostItContainer.Controls.Add(this.lblPostItMessage);
             this.pnlPostItContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPostItContainer.Location = new System.Drawing.Point(318, 3);
             this.pnlPostItContainer.Name = "pnlPostItContainer";
             this.pnlPostItContainer.Size = new System.Drawing.Size(684, 455);
             this.pnlPostItContainer.TabIndex = 1;
             this.pnlPostItContainer.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlPostItContainer_MouseClick);
-            // 
-            // rchtxtbxPostItMessage
-            // 
-            this.rchtxtbxPostItMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.rchtxtbxPostItMessage.Location = new System.Drawing.Point(0, 416);
-            this.rchtxtbxPostItMessage.Name = "rchtxtbxPostItMessage";
-            this.rchtxtbxPostItMessage.Size = new System.Drawing.Size(683, 39);
-            this.rchtxtbxPostItMessage.TabIndex = 0;
-            this.rchtxtbxPostItMessage.Text = "";
             // 
             // pnlAnnouncements
             // 
@@ -420,6 +410,15 @@
             this.calendarSchedule.Size = new System.Drawing.Size(1005, 461);
             this.calendarSchedule.TabIndex = 0;
             // 
+            // lblPostItMessage
+            // 
+            this.lblPostItMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPostItMessage.BackColor = System.Drawing.Color.White;
+            this.lblPostItMessage.Location = new System.Drawing.Point(3, 416);
+            this.lblPostItMessage.Name = "lblPostItMessage";
+            this.lblPostItMessage.Size = new System.Drawing.Size(678, 31);
+            this.lblPostItMessage.TabIndex = 0;
+            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -475,10 +474,10 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TableLayoutPanel tblLytPostItNote;
         private System.Windows.Forms.Panel pnlPostItContainer;
-        private System.Windows.Forms.RichTextBox rchtxtbxPostItMessage;
         private System.Windows.Forms.Panel pnlAnnouncements;
         private System.Windows.Forms.Panel pnlHome;
         private CalendarControl calendarSchedule;
+        private System.Windows.Forms.Label lblPostItMessage;
     }
 }
 

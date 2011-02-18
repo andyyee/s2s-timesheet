@@ -99,9 +99,9 @@ namespace OfficeManager
         {
 
             postIt temp = (postIt)sender;
-            rchtxtbxPostItMessage.Text = temp.message;
-            rchtxtbxPostItMessage.BackColor = temp.BackColor;
-            rchtxtbxPostItMessage.ForeColor = temp.ForeColor;
+            lblPostItMessage.Text = temp.message;
+            lblPostItMessage.BackColor = temp.BackColor;
+            lblPostItMessage.ForeColor = temp.ForeColor;
         }
 
         /*
