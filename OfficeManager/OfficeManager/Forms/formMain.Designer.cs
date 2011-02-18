@@ -59,8 +59,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.calendarSchedule = new OfficeManager.CalendarControl();
             this.lblPostItMessage = new System.Windows.Forms.Label();
+            this.calendarSchedule = new OfficeManager.CalendarControl();
             this.tabs.SuspendLayout();
             this.tabCommunication.SuspendLayout();
             this.tblLytPostItNote.SuspendLayout();
@@ -86,7 +86,7 @@
             this.tabs.Location = new System.Drawing.Point(0, 0);
             this.tabs.Name = "tabs";
             this.tabs.SelectedIndex = 0;
-            this.tabs.Size = new System.Drawing.Size(1019, 493);
+            this.tabs.Size = new System.Drawing.Size(994, 522);
             this.tabs.TabIndex = 0;
             // 
             // tabHome
@@ -94,7 +94,7 @@
             this.tabHome.Location = new System.Drawing.Point(4, 22);
             this.tabHome.Name = "tabHome";
             this.tabHome.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHome.Size = new System.Drawing.Size(1011, 467);
+            this.tabHome.Size = new System.Drawing.Size(986, 496);
             this.tabHome.TabIndex = 5;
             this.tabHome.Text = "Home";
             this.tabHome.UseVisualStyleBackColor = true;
@@ -106,7 +106,7 @@
             this.tabCommunication.Location = new System.Drawing.Point(4, 22);
             this.tabCommunication.Name = "tabCommunication";
             this.tabCommunication.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCommunication.Size = new System.Drawing.Size(1011, 467);
+            this.tabCommunication.Size = new System.Drawing.Size(986, 496);
             this.tabCommunication.TabIndex = 0;
             this.tabCommunication.Text = "Communication";
             this.tabCommunication.UseVisualStyleBackColor = true;
@@ -123,7 +123,7 @@
             this.tblLytPostItNote.Name = "tblLytPostItNote";
             this.tblLytPostItNote.RowCount = 1;
             this.tblLytPostItNote.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tblLytPostItNote.Size = new System.Drawing.Size(1005, 461);
+            this.tblLytPostItNote.Size = new System.Drawing.Size(980, 490);
             this.tblLytPostItNote.TabIndex = 0;
             // 
             // pnlPostItContainer
@@ -133,9 +133,9 @@
             this.pnlPostItContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlPostItContainer.Controls.Add(this.lblPostItMessage);
             this.pnlPostItContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlPostItContainer.Location = new System.Drawing.Point(318, 3);
+            this.pnlPostItContainer.Location = new System.Drawing.Point(310, 3);
             this.pnlPostItContainer.Name = "pnlPostItContainer";
-            this.pnlPostItContainer.Size = new System.Drawing.Size(684, 455);
+            this.pnlPostItContainer.Size = new System.Drawing.Size(667, 484);
             this.pnlPostItContainer.TabIndex = 1;
             this.pnlPostItContainer.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlPostItContainer_MouseClick);
             // 
@@ -145,7 +145,7 @@
             this.pnlAnnouncements.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlAnnouncements.Location = new System.Drawing.Point(3, 3);
             this.pnlAnnouncements.Name = "pnlAnnouncements";
-            this.pnlAnnouncements.Size = new System.Drawing.Size(309, 455);
+            this.pnlAnnouncements.Size = new System.Drawing.Size(301, 484);
             this.pnlAnnouncements.TabIndex = 0;
             // 
             // pnlHome
@@ -153,7 +153,7 @@
             this.pnlHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlHome.Location = new System.Drawing.Point(3, 3);
             this.pnlHome.Name = "pnlHome";
-            this.pnlHome.Size = new System.Drawing.Size(1005, 461);
+            this.pnlHome.Size = new System.Drawing.Size(980, 490);
             this.pnlHome.TabIndex = 0;
             // 
             // tabStatus
@@ -161,7 +161,7 @@
             this.tabStatus.Location = new System.Drawing.Point(4, 22);
             this.tabStatus.Name = "tabStatus";
             this.tabStatus.Padding = new System.Windows.Forms.Padding(3);
-            this.tabStatus.Size = new System.Drawing.Size(1011, 467);
+            this.tabStatus.Size = new System.Drawing.Size(1013, 467);
             this.tabStatus.TabIndex = 1;
             this.tabStatus.Text = "Status Overview";
             this.tabStatus.UseVisualStyleBackColor = true;
@@ -174,7 +174,7 @@
             this.tabProfile.Location = new System.Drawing.Point(4, 22);
             this.tabProfile.Name = "tabProfile";
             this.tabProfile.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProfile.Size = new System.Drawing.Size(1011, 467);
+            this.tabProfile.Size = new System.Drawing.Size(1013, 467);
             this.tabProfile.TabIndex = 2;
             this.tabProfile.Text = "View/Edit (OLD!)";
             // 
@@ -189,7 +189,7 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1005, 461);
+            this.tabControl1.Size = new System.Drawing.Size(1007, 461);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -197,7 +197,7 @@
             this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(997, 432);
+            this.tabPage1.Size = new System.Drawing.Size(999, 432);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             // 
@@ -218,7 +218,7 @@
             this.tabSchedule.Location = new System.Drawing.Point(4, 22);
             this.tabSchedule.Name = "tabSchedule";
             this.tabSchedule.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSchedule.Size = new System.Drawing.Size(1011, 467);
+            this.tabSchedule.Size = new System.Drawing.Size(1013, 467);
             this.tabSchedule.TabIndex = 3;
             this.tabSchedule.Text = "View Schedule";
             // 
@@ -227,7 +227,7 @@
             this.tabManager.Location = new System.Drawing.Point(4, 22);
             this.tabManager.Name = "tabManager";
             this.tabManager.Padding = new System.Windows.Forms.Padding(3);
-            this.tabManager.Size = new System.Drawing.Size(1011, 467);
+            this.tabManager.Size = new System.Drawing.Size(1013, 467);
             this.tabManager.TabIndex = 4;
             this.tabManager.Text = "Manager Function";
             this.tabManager.UseVisualStyleBackColor = true;
@@ -253,7 +253,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1011, 467);
+            this.tabPage3.Size = new System.Drawing.Size(1013, 467);
             this.tabPage3.TabIndex = 6;
             this.tabPage3.Text = "Profile";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -400,6 +400,16 @@
             this.label1.Text = "Username";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // lblPostItMessage
+            // 
+            this.lblPostItMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPostItMessage.BackColor = System.Drawing.Color.White;
+            this.lblPostItMessage.Location = new System.Drawing.Point(3, 445);
+            this.lblPostItMessage.Name = "lblPostItMessage";
+            this.lblPostItMessage.Size = new System.Drawing.Size(659, 31);
+            this.lblPostItMessage.TabIndex = 0;
+            // 
             // calendarSchedule
             // 
             this.calendarSchedule.BackColor = System.Drawing.Color.Transparent;
@@ -407,23 +417,14 @@
             this.calendarSchedule.Location = new System.Drawing.Point(3, 3);
             this.calendarSchedule.Margin = new System.Windows.Forms.Padding(0);
             this.calendarSchedule.Name = "calendarSchedule";
-            this.calendarSchedule.Size = new System.Drawing.Size(1005, 461);
+            this.calendarSchedule.Size = new System.Drawing.Size(1007, 461);
             this.calendarSchedule.TabIndex = 0;
-            // 
-            // lblPostItMessage
-            // 
-            this.lblPostItMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPostItMessage.BackColor = System.Drawing.Color.White;
-            this.lblPostItMessage.Location = new System.Drawing.Point(3, 416);
-            this.lblPostItMessage.Name = "lblPostItMessage";
-            this.lblPostItMessage.Size = new System.Drawing.Size(678, 31);
-            this.lblPostItMessage.TabIndex = 0;
             // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1019, 493);
+            this.ClientSize = new System.Drawing.Size(994, 522);
             this.Controls.Add(this.tabs);
             this.Name = "formMain";
             this.Text = "Form1";
