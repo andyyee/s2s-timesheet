@@ -5,132 +5,70 @@ using System.Drawing;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Collections;
 using System.Windows.Forms;
 using OfficeManager.Forms;
+using System.Windows;
 
 namespace OfficeManager
 {
     public partial class CalendarControl : UserControl
     {
         private formSchedule scheduler;
+        private Dictionary<String, Label> timeLabels;
+        private ArrayList stringTimes;
+
         public CalendarControl()
         {
+            Label temp;
             InitializeComponent();
-        }
 
-        private void linkLabel15_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
+            timeLabels = new Dictionary<String, Label>();
+            stringTimes = new ArrayList();
+            TableLayoutPanelCellPosition cell = new TableLayoutPanelCellPosition();
+            cell.Column = 0;
 
-        }
+            Color darkblue = ColorTranslator.FromHtml("#024769");
+            Color lightblue = ColorTranslator.FromHtml("#95CBE9");
+            Color darkgreen = ColorTranslator.FromHtml("#2C5700");
+            Color lightgreen = ColorTranslator.FromHtml("#AFD775");
+            Color brown = ColorTranslator.FromHtml("#EFD279");
+            Color pink = ColorTranslator.FromHtml("#DE9D7F");
 
-        private void linkLabel19_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
+            for (int i = 600, j = 2; i < 2100; i += 50, j++)
+            {
+                stringTimes.Add("" + i);
 
-        }
+                temp = new Label();
+                //Change temp properties here
+                temp.BackColor = darkblue;
+                temp.ForeColor = lightblue;
+                temp.Text = get12HourFormat(i);
+                temp.AutoSize = false;
 
-        private void linkLabel7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
+                
+                temp.Dock = DockStyle.Fill;
+                cell.Row = j;
 
-        }
+                tblLayoutCalendar.Controls.Add(temp);
+                tblLayoutCalendar.SetCellPosition(temp, cell); 
+                timeLabels.Add(i + "", temp);
+            }
 
-        private void linkLabel8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
 
-        }
 
-        private void linkLabel20_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
+            //Put time labels in correct place
 
-        }
+            tblLayoutCalendar.BackColor = darkblue;
 
-        private void linkLabel13_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
+            label1.BackColor = darkgreen;
+            label1.ForeColor = lightgreen;
 
-        }
+            label2.BackColor = lightgreen;
+            label2.ForeColor = darkgreen;
 
-        private void linkLabel14_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void linkLabel17_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void linkLabel11_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void linkLabel9_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void linkLabel21_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void linkLabel22_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void linkLabel28_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void linkLabel18_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void linkLabel12_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            
-        }
-
-        private void linkLabel10_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void linkLabel26_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void linkLabel27_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
+            lblTime.ForeColor = darkblue;
+            lblTime.BackColor = lightblue;
         }
 
         private void lblS6_Click(object sender, EventArgs e)
@@ -144,5 +82,34 @@ namespace OfficeManager
             scheduler.Close();
         }
 
+        private String get12HourFormat(int time)
+        {
+            StringBuilder result = new StringBuilder();
+            
+            String end = " AM";
+            int hour = time / 100;
+            String minute = ":00";
+
+            if (time >= 1200)
+            {
+                end = " PM";
+            }
+            if (time >= 1300)
+            {
+                hour -= 12;
+            }
+
+            if (time % 100 == 50)
+            {
+                minute = ":30";
+            }
+
+            result.Append(hour);
+            result.Append(minute);
+            result.Append(end);
+
+            return result.ToString();
+        }
+    
     }
 }
