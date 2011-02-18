@@ -113,6 +113,17 @@ namespace OfficeManager
 
         }
 
+        private void formMain_ResizeBegin(object sender, EventArgs e)
+        {
+            postItBackground = pnlPostItContainer.BackgroundImage;
+            pnlPostItContainer.BackgroundImage = null;
+        }
+
+        private void formMain_ResizeEnd(object sender, EventArgs e)
+        {
+            pnlPostItContainer.BackgroundImage = postItBackground;
+        }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -157,6 +168,5 @@ namespace OfficeManager
         {
 
         }
->>>>>>> .r106
     }
 }
