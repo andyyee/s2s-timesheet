@@ -61,10 +61,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.CalendarSchedule = new OfficeManager.CalendarControl();
-<<<<<<< .mine
             this.tabManager = new System.Windows.Forms.TabPage();
-=======
->>>>>>> .r106
             this.tabs.SuspendLayout();
             this.tabCommunication.SuspendLayout();
             this.pnlHome.SuspendLayout();
@@ -247,8 +244,6 @@
             this.tabManager.Text = "Manager Function";
             this.tabManager.UseVisualStyleBackColor = true;
             // 
-<<<<<<< .mine
-=======
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.button2);
@@ -275,7 +270,6 @@
             this.tabPage3.Text = "Profile";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
->>>>>>> .r106
             // label1
             // 
             this.label1.AutoSize = true;
