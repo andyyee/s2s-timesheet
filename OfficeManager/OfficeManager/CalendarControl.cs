@@ -16,13 +16,15 @@ namespace OfficeManager
     {
         private formSchedule scheduler;
         private Dictionary<String, Label> timeLabels;
+        private Label[] dateLabels = new Label[7];
         private ArrayList stringTimes;
 
         public CalendarControl()
         {
             Label temp;
             InitializeComponent();
-
+            InitializeDateLabels();
+            
             timeLabels = new Dictionary<String, Label>();
             stringTimes = new ArrayList();
             TableLayoutPanelCellPosition cell = new TableLayoutPanelCellPosition();
@@ -35,7 +37,7 @@ namespace OfficeManager
             Color brown = ColorTranslator.FromHtml("#EFD279");
             Color pink = ColorTranslator.FromHtml("#DE9D7F");
 
-            for (int i = 600, j = 2; i < 2100; i += 50, j++)
+            for (int i = 600, j = 2; i <= 2100; i += 50, j++)
             {
                 stringTimes.Add("" + i);
 
@@ -45,9 +47,8 @@ namespace OfficeManager
                 temp.ForeColor = lightblue;
                 temp.Text = get12HourFormat(i);
                 temp.AutoSize = false;
-
-                
                 temp.Dock = DockStyle.Fill;
+
                 cell.Row = j;
 
                 tblLayoutCalendar.Controls.Add(temp);
@@ -66,6 +67,9 @@ namespace OfficeManager
 
             label2.BackColor = lightgreen;
             label2.ForeColor = darkgreen;
+
+            label3.BackColor = darkgreen;
+            label3.ForeColor = lightgreen;
 
             lblTime.ForeColor = darkblue;
             lblTime.BackColor = lightblue;
@@ -110,6 +114,23 @@ namespace OfficeManager
 
             return result.ToString();
         }
-    
+
+        private void InitializeDateLabels()
+        {
+            dateLabels[0] = lblSundayDate;
+            dateLabels[1] = lblMondayDate;
+            dateLabels[2] = lblTuesdayDate;
+            dateLabels[3] = lblWednesdayDate;
+            dateLabels[4] = lblThursdayDate;
+            dateLabels[5] = lblFridayDate;
+            dateLabels[6] = lblSaturdayDate;
+            DateTime now = DateTime.Today;
+            for (int i = 0; i < 7; i++)
+            {
+                dateLabels[i].Text = now.ToShortDateString();
+                now = now.AddDays(1);
+            }
+        }
+            
     }
 }
