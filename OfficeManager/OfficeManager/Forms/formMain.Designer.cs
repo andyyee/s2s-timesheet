@@ -61,6 +61,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.CalendarSchedule = new OfficeManager.CalendarControl();
+<<<<<<< .mine
+            this.tabManager = new System.Windows.Forms.TabPage();
+=======
+>>>>>>> .r106
             this.tabs.SuspendLayout();
             this.tabCommunication.SuspendLayout();
             this.pnlHome.SuspendLayout();
@@ -74,6 +78,9 @@
             // 
             // tabs
             // 
+            this.tabs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tabs.Controls.Add(this.tabHome);
             this.tabs.Controls.Add(this.tabCommunication);
             this.tabs.Controls.Add(this.tabStatus);
@@ -119,7 +126,9 @@
             // 
             // tblLytPostItNote
             // 
-            this.tblLytPostItNote.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tblLytPostItNote.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tblLytPostItNote.ColumnCount = 2;
             this.tblLytPostItNote.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.36364F));
             this.tblLytPostItNote.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.63636F));
@@ -238,6 +247,8 @@
             this.tabManager.Text = "Manager Function";
             this.tabManager.UseVisualStyleBackColor = true;
             // 
+<<<<<<< .mine
+=======
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.button2);
@@ -264,6 +275,7 @@
             this.tabPage3.Text = "Profile";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+>>>>>>> .r106
             // label1
             // 
             this.label1.AutoSize = true;
@@ -425,6 +437,8 @@
             this.Name = "formMain";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResizeBegin += new System.EventHandler(this.formMain_ResizeBegin);
+            this.ResizeEnd += new System.EventHandler(this.formMain_ResizeEnd);
             this.tabs.ResumeLayout(false);
             this.tabCommunication.ResumeLayout(false);
             this.pnlHome.ResumeLayout(false);

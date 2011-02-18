@@ -7,6 +7,7 @@ namespace OfficeManager
 {
     public partial class formMain : Form
     {
+        Image postItBackground;
         public formMain()
         {
             InitializeComponent();
@@ -156,5 +157,6 @@ namespace OfficeManager
         {
 
         }
+>>>>>>> .r106
     }
 }
