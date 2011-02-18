@@ -125,6 +125,7 @@ namespace OfficeManager
             dateLabels[5] = lblFridayDate;
             dateLabels[6] = lblSaturdayDate;
             DateTime now = DateTime.Today;
+            now = now.Subtract(TimeSpan.FromDays((int)now.DayOfWeek));
             for (int i = 0; i < 7; i++)
             {
                 dateLabels[i].Text = now.ToShortDateString();
