@@ -27,9 +27,9 @@ namespace OfficeManager.Forms
         public struct time
         {
             private string _key;
-            private double _value;
+            private int _value;
 
-            public time(string key, double value)
+            public time(string key, int value)
             {
                 this._value = value;
                 this._key = key;
@@ -40,7 +40,7 @@ namespace OfficeManager.Forms
                 { return this._key; 
                 } }
 
-            public double value{ 
+            public int value{ 
                 get 
                 { return this._value; 
                 } }
@@ -62,35 +62,37 @@ namespace OfficeManager.Forms
             InitializeComponent();
 
             startTimes = new time[] {
-                new time("6:00 AM" , 6),
-                new time("6:30 AM" , 6.5),
-                new time("7:00 AM" , 7),
-                new time("7:30 AM" , 7.5),
-                new time("8:00 AM" , 8),
-                new time("8:30 AM" , 8.5),
-                new time("9:00 AM" , 9),
-                new time("9:30 AM" , 9.5),
-                new time("10:00 AM" , 10),
-                new time("10:30 AM" , 10.5),
-                new time("11:00 AM" , 11),
-                new time("11:30 AM" , 11.5),
-                new time("12:00 AM" , 12),
-                new time("12:30 PM" , 12.5),
-                new time("1:00 PM" , 13),
-                new time("1:30 PM" , 13.5),
-                new time("2:00 PM" , 14),
-                new time("2:30 PM" , 14.5),
-                new time("3:00 PM" , 15),
-                new time("3:30 PM" , 15.5),
-                new time("4:00 PM" , 16),
-                new time("4:30 PM" , 16.5),
-                new time("5:00 PM" , 17),
-                new time("5:30 PM" , 17.5),
-                new time("6:00 PM" , 18),
-                new time("6:30 PM" , 18.5),
-                new time("7:00 PM" , 19.5),
-                new time("7:30 PM" , 19.5),
-                new time("8:00 PM" , 20)
+                new time("6:00 AM" , 600),
+                new time("6:30 AM" , 650),
+                new time("7:00 AM" , 700),
+                new time("7:30 AM" , 750),
+                new time("8:00 AM" , 800),
+                new time("8:30 AM" , 850),
+                new time("9:00 AM" , 900),
+                new time("9:30 AM" , 950),
+                new time("10:00 AM" , 1000),
+                new time("10:30 AM" , 1050),
+                new time("11:00 AM" , 1100),
+                new time("11:30 AM" , 1150),
+                new time("12:00 AM" , 1200),
+                new time("12:30 PM" , 1250),
+                new time("1:00 PM" , 1300),
+                new time("1:30 PM" , 1350),
+                new time("2:00 PM" , 1400),
+                new time("2:30 PM" , 1450),
+                new time("3:00 PM" , 1500),
+                new time("3:30 PM" , 1550),
+                new time("4:00 PM" , 1600),
+                new time("4:30 PM" , 1650),
+                new time("5:00 PM" , 1700),
+                new time("5:30 PM" , 1750),
+                new time("6:00 PM" , 1800),
+                new time("6:30 PM" , 1850),
+                new time("7:00 PM" , 1900),
+                new time("7:30 PM" , 1950),
+                new time("8:00 PM" , 2000),
+                new time("8:30 PM" , 2050),
+                new time("9:00 PM" , 2100)
             };            
             
             endTimes = new time[29];
