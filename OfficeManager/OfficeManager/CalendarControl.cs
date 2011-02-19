@@ -142,6 +142,11 @@ namespace OfficeManager
         {
 
         }
+
+        private void tblLayoutCalendar_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
             
     }
 }

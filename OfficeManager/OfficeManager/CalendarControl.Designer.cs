@@ -62,7 +62,7 @@
             this.panel1.Controls.Add(this.tblLayoutCalendar);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(961, 428);
+            this.panel1.Size = new System.Drawing.Size(961, 431);
             this.panel1.TabIndex = 3;
             // 
             // tblLayoutCalendar
@@ -78,7 +78,7 @@
             this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
             this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
             this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
-            this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
+            this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 141F));
             this.tblLayoutCalendar.Controls.Add(this.label3, 3, 5);
             this.tblLayoutCalendar.Controls.Add(this.label2, 2, 12);
             this.tblLayoutCalendar.Controls.Add(this.lblS630, 1, 3);
@@ -133,11 +133,12 @@
             this.tblLayoutCalendar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
             this.tblLayoutCalendar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
             this.tblLayoutCalendar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
-            this.tblLayoutCalendar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
-            this.tblLayoutCalendar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 11F));
-            this.tblLayoutCalendar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblLayoutCalendar.Size = new System.Drawing.Size(957, 424);
+            this.tblLayoutCalendar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
+            this.tblLayoutCalendar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
+            this.tblLayoutCalendar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
+            this.tblLayoutCalendar.Size = new System.Drawing.Size(957, 427);
             this.tblLayoutCalendar.TabIndex = 1;
+            this.tblLayoutCalendar.Paint += new System.Windows.Forms.PaintEventHandler(this.tblLayoutCalendar_Paint_1);
             // 
             // label3
             // 
@@ -294,7 +295,7 @@
             this.lblSaturday.Location = new System.Drawing.Point(818, 1);
             this.lblSaturday.Margin = new System.Windows.Forms.Padding(0);
             this.lblSaturday.Name = "lblSaturday";
-            this.lblSaturday.Size = new System.Drawing.Size(139, 20);
+            this.lblSaturday.Size = new System.Drawing.Size(141, 20);
             this.lblSaturday.TabIndex = 16;
             this.lblSaturday.Text = "Saturday";
             this.lblSaturday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -309,7 +310,7 @@
             this.lblSaturdayDate.Location = new System.Drawing.Point(818, 22);
             this.lblSaturdayDate.Margin = new System.Windows.Forms.Padding(0);
             this.lblSaturdayDate.Name = "lblSaturdayDate";
-            this.lblSaturdayDate.Size = new System.Drawing.Size(139, 20);
+            this.lblSaturdayDate.Size = new System.Drawing.Size(141, 20);
             this.lblSaturdayDate.TabIndex = 15;
             this.lblSaturdayDate.Text = "Date";
             this.lblSaturdayDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -442,12 +443,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "CalendarControl";
-            this.Size = new System.Drawing.Size(959, 424);
+            this.Size = new System.Drawing.Size(959, 433);
             this.panel1.ResumeLayout(false);
             this.tblLayoutCalendar.ResumeLayout(false);
             this.tblLayoutCalendar.PerformLayout();
