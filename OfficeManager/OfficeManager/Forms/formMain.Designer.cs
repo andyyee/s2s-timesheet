@@ -38,7 +38,6 @@
             this.pnlHome = new System.Windows.Forms.Panel();
             this.tabStatus = new System.Windows.Forms.TabPage();
             this.tabSchedule = new System.Windows.Forms.TabPage();
-            this.calendarSchedule = new OfficeManager.CalendarControl();
             this.tabManager = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
@@ -57,12 +56,42 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.calendarSchedule = new OfficeManager.CalendarControl();
             this.tabs.SuspendLayout();
             this.tabCommunication.SuspendLayout();
             this.tblLytPostItNote.SuspendLayout();
             this.pnlPostItContainer.SuspendLayout();
             this.tabSchedule.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabs
@@ -76,6 +105,7 @@
             this.tabs.Controls.Add(this.tabSchedule);
             this.tabs.Controls.Add(this.tabManager);
             this.tabs.Controls.Add(this.tabPage3);
+            this.tabs.Controls.Add(this.tabPage1);
             this.tabs.Location = new System.Drawing.Point(0, 0);
             this.tabs.Name = "tabs";
             this.tabs.SelectedIndex = 0;
@@ -116,7 +146,7 @@
             this.tblLytPostItNote.Name = "tblLytPostItNote";
             this.tblLytPostItNote.RowCount = 1;
             this.tblLytPostItNote.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tblLytPostItNote.Size = new System.Drawing.Size(186, 68);
+            this.tblLytPostItNote.Size = new System.Drawing.Size(980, 490);
             this.tblLytPostItNote.TabIndex = 0;
             // 
             // pnlPostItContainer
@@ -126,9 +156,9 @@
             this.pnlPostItContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlPostItContainer.Controls.Add(this.lblPostItMessage);
             this.pnlPostItContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlPostItContainer.Location = new System.Drawing.Point(61, 3);
+            this.pnlPostItContainer.Location = new System.Drawing.Point(310, 3);
             this.pnlPostItContainer.Name = "pnlPostItContainer";
-            this.pnlPostItContainer.Size = new System.Drawing.Size(122, 62);
+            this.pnlPostItContainer.Size = new System.Drawing.Size(667, 484);
             this.pnlPostItContainer.TabIndex = 1;
             this.pnlPostItContainer.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlPostItContainer_MouseClick);
             // 
@@ -137,9 +167,9 @@
             this.lblPostItMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPostItMessage.BackColor = System.Drawing.Color.White;
-            this.lblPostItMessage.Location = new System.Drawing.Point(3, 23);
+            this.lblPostItMessage.Location = new System.Drawing.Point(3, 445);
             this.lblPostItMessage.Name = "lblPostItMessage";
-            this.lblPostItMessage.Size = new System.Drawing.Size(114, 31);
+            this.lblPostItMessage.Size = new System.Drawing.Size(659, 31);
             this.lblPostItMessage.TabIndex = 0;
             // 
             // pnlAnnouncements
@@ -148,7 +178,7 @@
             this.pnlAnnouncements.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlAnnouncements.Location = new System.Drawing.Point(3, 3);
             this.pnlAnnouncements.Name = "pnlAnnouncements";
-            this.pnlAnnouncements.Size = new System.Drawing.Size(52, 62);
+            this.pnlAnnouncements.Size = new System.Drawing.Size(301, 484);
             this.pnlAnnouncements.TabIndex = 0;
             // 
             // pnlHome
@@ -156,7 +186,7 @@
             this.pnlHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlHome.Location = new System.Drawing.Point(3, 3);
             this.pnlHome.Name = "pnlHome";
-            this.pnlHome.Size = new System.Drawing.Size(186, 68);
+            this.pnlHome.Size = new System.Drawing.Size(980, 490);
             this.pnlHome.TabIndex = 0;
             // 
             // tabStatus
@@ -180,16 +210,6 @@
             this.tabSchedule.Size = new System.Drawing.Size(986, 496);
             this.tabSchedule.TabIndex = 3;
             this.tabSchedule.Text = "View Schedule";
-            // 
-            // calendarSchedule
-            // 
-            this.calendarSchedule.BackColor = System.Drawing.Color.Transparent;
-            this.calendarSchedule.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.calendarSchedule.Location = new System.Drawing.Point(3, 3);
-            this.calendarSchedule.Margin = new System.Windows.Forms.Padding(0);
-            this.calendarSchedule.Name = "calendarSchedule";
-            this.calendarSchedule.Size = new System.Drawing.Size(980, 490);
-            this.calendarSchedule.TabIndex = 0;
             // 
             // tabManager
             // 
@@ -369,6 +389,199 @@
             this.label1.Text = "Username";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.groupBox9);
+            this.tabPage1.Controls.Add(this.groupBox5);
+            this.tabPage1.Controls.Add(this.groupBox4);
+            this.tabPage1.Controls.Add(this.groupBox3);
+            this.tabPage1.Controls.Add(this.button3);
+            this.tabPage1.Controls.Add(this.button4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(986, 496);
+            this.tabPage1.TabIndex = 7;
+            this.tabPage1.Text = "Profile v2";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click_1);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.groupBox8);
+            this.groupBox5.Controls.Add(this.groupBox7);
+            this.groupBox5.Controls.Add(this.groupBox6);
+            this.groupBox5.Location = new System.Drawing.Point(8, 230);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(136, 220);
+            this.groupBox5.TabIndex = 25;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Contact Info";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.textBox8);
+            this.groupBox8.Location = new System.Drawing.Point(13, 128);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(112, 86);
+            this.groupBox8.TabIndex = 22;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Mailing Address";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(6, 19);
+            this.textBox8.Multiline = true;
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 58);
+            this.textBox8.TabIndex = 7;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.maskedTextBox1);
+            this.groupBox7.Location = new System.Drawing.Point(13, 73);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(112, 49);
+            this.groupBox7.TabIndex = 21;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Phone Number";
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(6, 19);
+            this.maskedTextBox1.Mask = "(999) 000-0000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBox1.TabIndex = 6;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.textBox9);
+            this.groupBox6.Location = new System.Drawing.Point(13, 19);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(112, 48);
+            this.groupBox6.TabIndex = 21;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Email Address";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(6, 20);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 20);
+            this.textBox9.TabIndex = 5;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.textBox10);
+            this.groupBox4.Location = new System.Drawing.Point(8, 129);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(136, 50);
+            this.groupBox4.TabIndex = 24;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Employee ID";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(19, 19);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
+            this.textBox10.Size = new System.Drawing.Size(100, 20);
+            this.textBox10.TabIndex = 3;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.groupBox1);
+            this.groupBox3.Controls.Add(this.groupBox2);
+            this.groupBox3.Location = new System.Drawing.Point(8, 5);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(136, 118);
+            this.groupBox3.TabIndex = 23;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Login Data";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.textBox11);
+            this.groupBox1.Location = new System.Drawing.Point(13, 19);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(112, 47);
+            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Username";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(6, 19);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(100, 20);
+            this.textBox11.TabIndex = 1;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.textBox12);
+            this.groupBox2.Location = new System.Drawing.Point(13, 64);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(112, 48);
+            this.groupBox2.TabIndex = 17;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Password";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(6, 19);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.PasswordChar = '*';
+            this.textBox12.Size = new System.Drawing.Size(100, 20);
+            this.textBox12.TabIndex = 2;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(71, 457);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(73, 31);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "Update";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(8, 460);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(57, 25);
+            this.button4.TabIndex = 9;
+            this.button4.Text = "Revert";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.textBox13);
+            this.groupBox9.Location = new System.Drawing.Point(8, 180);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(136, 44);
+            this.groupBox9.TabIndex = 26;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Full Name";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(19, 18);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.ReadOnly = true;
+            this.textBox13.Size = new System.Drawing.Size(100, 20);
+            this.textBox13.TabIndex = 4;
+            // 
+            // calendarSchedule
+            // 
+            this.calendarSchedule.BackColor = System.Drawing.Color.Transparent;
+            this.calendarSchedule.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.calendarSchedule.Location = new System.Drawing.Point(3, 3);
+            this.calendarSchedule.Margin = new System.Windows.Forms.Padding(0);
+            this.calendarSchedule.Name = "calendarSchedule";
+            this.calendarSchedule.Size = new System.Drawing.Size(980, 490);
+            this.calendarSchedule.TabIndex = 0;
+            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -387,6 +600,23 @@
             this.tabSchedule.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -422,6 +652,25 @@
         private System.Windows.Forms.Panel pnlHome;
         private CalendarControl calendarSchedule;
         private System.Windows.Forms.Label lblPostItMessage;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.TextBox textBox13;
     }
 }
 

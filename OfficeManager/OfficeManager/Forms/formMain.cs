@@ -168,5 +168,15 @@ namespace OfficeManager
         {
 
         }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
