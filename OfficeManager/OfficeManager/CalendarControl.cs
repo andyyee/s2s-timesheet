@@ -132,6 +132,16 @@ namespace OfficeManager
                 now = now.AddDays(1);
             }
         }
+
+        private void tblLayoutCalendar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
             
     }
 }
