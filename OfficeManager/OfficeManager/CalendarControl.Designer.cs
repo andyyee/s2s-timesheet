@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.tblLayoutCalendar = new System.Windows.Forms.TableLayoutPanel();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblS630 = new System.Windows.Forms.Label();
             this.lblS7 = new System.Windows.Forms.Label();
@@ -46,10 +47,9 @@
             this.lblTuesdayDate = new System.Windows.Forms.Label();
             this.lblMondayDate = new System.Windows.Forms.Label();
             this.lblSundayDate = new System.Windows.Forms.Label();
-            this.lblTime = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.tblLayoutCalendar.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -67,7 +67,7 @@
             this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
-            this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 144F));
+            this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 145F));
             this.tblLayoutCalendar.Controls.Add(this.label3, 3, 5);
             this.tblLayoutCalendar.Controls.Add(this.label2, 2, 12);
             this.tblLayoutCalendar.Controls.Add(this.lblS630, 1, 3);
@@ -136,6 +136,23 @@
             this.tblLayoutCalendar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tblLayoutCalendar.Size = new System.Drawing.Size(1006, 436);
             this.tblLayoutCalendar.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoEllipsis = true;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label3.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(369, 88);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.label3.Name = "label3";
+            this.label3.Padding = new System.Windows.Forms.Padding(3);
+            this.tblLayoutCalendar.SetRowSpan(this.label3, 23);
+            this.label3.Size = new System.Drawing.Size(118, 315);
+            this.label3.TabIndex = 57;
+            this.label3.Text = "11.5 Hours";
             // 
             // label2
             // 
@@ -274,7 +291,7 @@
             this.lblSaturday.Location = new System.Drawing.Point(880, 1);
             this.lblSaturday.Margin = new System.Windows.Forms.Padding(0);
             this.lblSaturday.Name = "lblSaturday";
-            this.lblSaturday.Size = new System.Drawing.Size(144, 20);
+            this.lblSaturday.Size = new System.Drawing.Size(145, 20);
             this.lblSaturday.TabIndex = 16;
             this.lblSaturday.Text = "Saturday";
             this.lblSaturday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -289,7 +306,7 @@
             this.lblSaturdayDate.Location = new System.Drawing.Point(880, 22);
             this.lblSaturdayDate.Margin = new System.Windows.Forms.Padding(0);
             this.lblSaturdayDate.Name = "lblSaturdayDate";
-            this.lblSaturdayDate.Size = new System.Drawing.Size(144, 20);
+            this.lblSaturdayDate.Size = new System.Drawing.Size(145, 20);
             this.lblSaturdayDate.TabIndex = 15;
             this.lblSaturdayDate.Text = "Date";
             this.lblSaturdayDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -384,21 +401,6 @@
             this.lblSundayDate.Text = "Date";
             this.lblSundayDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblTime
-            // 
-            this.lblTime.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblTime.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.ForeColor = System.Drawing.Color.Maroon;
-            this.lblTime.Location = new System.Drawing.Point(1, 1);
-            this.lblTime.Margin = new System.Windows.Forms.Padding(0);
-            this.lblTime.Name = "lblTime";
-            this.tblLayoutCalendar.SetRowSpan(this.lblTime, 2);
-            this.lblTime.Size = new System.Drawing.Size(104, 41);
-            this.lblTime.TabIndex = 23;
-            this.lblTime.Text = "Time";
-            this.lblTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label1
             // 
             this.label1.AutoEllipsis = true;
@@ -418,6 +420,21 @@
             this.label1.Text = "8 Hours";
             this.label1.Click += new System.EventHandler(this.lblS6_Click);
             // 
+            // lblTime
+            // 
+            this.lblTime.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTime.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.ForeColor = System.Drawing.Color.Maroon;
+            this.lblTime.Location = new System.Drawing.Point(1, 1);
+            this.lblTime.Margin = new System.Windows.Forms.Padding(0);
+            this.lblTime.Name = "lblTime";
+            this.tblLayoutCalendar.SetRowSpan(this.lblTime, 2);
+            this.lblTime.Size = new System.Drawing.Size(104, 41);
+            this.lblTime.TabIndex = 23;
+            this.lblTime.Text = "Time";
+            this.lblTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -428,29 +445,13 @@
             this.panel1.Size = new System.Drawing.Size(1010, 440);
             this.panel1.TabIndex = 2;
             // 
-            // label3
-            // 
-            this.label3.AutoEllipsis = true;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label3.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(369, 88);
-            this.label3.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(3);
-            this.tblLayoutCalendar.SetRowSpan(this.label3, 23);
-            this.label3.Size = new System.Drawing.Size(118, 315);
-            this.label3.TabIndex = 57;
-            this.label3.Text = "11.5 Hours";
-            // 
             // CalendarControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "CalendarControl";
             this.Size = new System.Drawing.Size(1048, 556);
