@@ -53,11 +53,11 @@
     <Compile Include="CalendarControl.designer.cs">
       <DependentUpon>CalendarControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="CalenderControl2.cs">
+    <Compile Include="CalendarControl2.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CalenderControl2.Designer.cs">
-      <DependentUpon>CalenderControl2.cs</DependentUpon>
+    <Compile Include="CalendarControl2.Designer.cs">
+      <DependentUpon>CalendarControl2.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseClasses\DBAccess.cs" />
     <Compile Include="DatabaseClasses\EmployeeDBAccess.cs" />
@@ -93,6 +93,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CalendarControl.resx">
       <DependentUpon>CalendarControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarControl2.resx">
+      <DependentUpon>CalendarControl2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
