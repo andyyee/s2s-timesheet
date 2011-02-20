@@ -78,7 +78,7 @@
             this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
             this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
             this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
-            this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 141F));
+            this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 142F));
             this.tblLayoutCalendar.Controls.Add(this.label3, 3, 5);
             this.tblLayoutCalendar.Controls.Add(this.label2, 2, 12);
             this.tblLayoutCalendar.Controls.Add(this.lblS630, 1, 3);
@@ -295,7 +295,7 @@
             this.lblSaturday.Location = new System.Drawing.Point(818, 1);
             this.lblSaturday.Margin = new System.Windows.Forms.Padding(0);
             this.lblSaturday.Name = "lblSaturday";
-            this.lblSaturday.Size = new System.Drawing.Size(141, 20);
+            this.lblSaturday.Size = new System.Drawing.Size(142, 20);
             this.lblSaturday.TabIndex = 16;
             this.lblSaturday.Text = "Saturday";
             this.lblSaturday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -310,7 +310,7 @@
             this.lblSaturdayDate.Location = new System.Drawing.Point(818, 22);
             this.lblSaturdayDate.Margin = new System.Windows.Forms.Padding(0);
             this.lblSaturdayDate.Name = "lblSaturdayDate";
-            this.lblSaturdayDate.Size = new System.Drawing.Size(141, 20);
+            this.lblSaturdayDate.Size = new System.Drawing.Size(142, 20);
             this.lblSaturdayDate.TabIndex = 15;
             this.lblSaturdayDate.Text = "Date";
             this.lblSaturdayDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -422,7 +422,7 @@
             this.label1.Size = new System.Drawing.Size(110, 217);
             this.label1.TabIndex = 53;
             this.label1.Text = "8 Hours";
-            this.label1.Click += new System.EventHandler(this.label4_Click);
+            this.label1.Click += new System.EventHandler(this.lblS6_Click);
             // 
             // lblTime
             // 
