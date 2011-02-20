@@ -53,6 +53,12 @@
     <Compile Include="CalendarControl.designer.cs">
       <DependentUpon>CalendarControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="CalenderControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CalenderControl2.Designer.cs">
+      <DependentUpon>CalenderControl2.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseClasses\DBAccess.cs" />
     <Compile Include="DatabaseClasses\EmployeeDBAccess.cs" />
     <Compile Include="DatabaseClasses\PostItDBAccess.cs" />
