@@ -32,8 +32,6 @@
             this.tabHome = new System.Windows.Forms.TabPage();
             this.tabCommunication = new System.Windows.Forms.TabPage();
             this.tblLytPostItNote = new System.Windows.Forms.TableLayoutPanel();
-            this.pnlPostItContainer = new System.Windows.Forms.Panel();
-            this.lblPostItMessage = new System.Windows.Forms.Label();
             this.pnlAnnouncements = new System.Windows.Forms.Panel();
             this.pnlHome = new System.Windows.Forms.Panel();
             this.tabStatus = new System.Windows.Forms.TabPage();
@@ -75,12 +73,25 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.pnlPostItContainer = new System.Windows.Forms.Panel();
+            this.lblPostItMessage = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.calendarSchedule = new OfficeManager.CalendarControl();
             this.calendarControl21 = new OfficeManager.CalendarControl2();
             this.tabs.SuspendLayout();
             this.tabCommunication.SuspendLayout();
             this.tblLytPostItNote.SuspendLayout();
-            this.pnlPostItContainer.SuspendLayout();
             this.tabSchedule.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -93,6 +104,7 @@
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.pnlPostItContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabs
@@ -149,29 +161,6 @@
             this.tblLytPostItNote.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tblLytPostItNote.Size = new System.Drawing.Size(980, 490);
             this.tblLytPostItNote.TabIndex = 0;
-            // 
-            // pnlPostItContainer
-            // 
-            this.pnlPostItContainer.BackColor = System.Drawing.Color.Transparent;
-            this.pnlPostItContainer.BackgroundImage = global::OfficeManager.Properties.Resources.fzm_seamless_corkboard1;
-            this.pnlPostItContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlPostItContainer.Controls.Add(this.lblPostItMessage);
-            this.pnlPostItContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlPostItContainer.Location = new System.Drawing.Point(310, 3);
-            this.pnlPostItContainer.Name = "pnlPostItContainer";
-            this.pnlPostItContainer.Size = new System.Drawing.Size(667, 484);
-            this.pnlPostItContainer.TabIndex = 1;
-            this.pnlPostItContainer.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlPostItContainer_MouseClick);
-            // 
-            // lblPostItMessage
-            // 
-            this.lblPostItMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPostItMessage.BackColor = System.Drawing.Color.White;
-            this.lblPostItMessage.Location = new System.Drawing.Point(3, 445);
-            this.lblPostItMessage.Name = "lblPostItMessage";
-            this.lblPostItMessage.Size = new System.Drawing.Size(659, 31);
-            this.lblPostItMessage.TabIndex = 0;
             // 
             // pnlAnnouncements
             // 
@@ -392,6 +381,17 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.dateTimePicker1);
+            this.tabPage1.Controls.Add(this.button14);
+            this.tabPage1.Controls.Add(this.button13);
+            this.tabPage1.Controls.Add(this.button12);
+            this.tabPage1.Controls.Add(this.button11);
+            this.tabPage1.Controls.Add(this.button10);
+            this.tabPage1.Controls.Add(this.button9);
+            this.tabPage1.Controls.Add(this.button8);
+            this.tabPage1.Controls.Add(this.button7);
+            this.tabPage1.Controls.Add(this.button6);
+            this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.calendarControl21);
             this.tabPage1.Controls.Add(this.groupBox9);
             this.tabPage1.Controls.Add(this.groupBox5);
@@ -399,6 +399,7 @@
             this.tabPage1.Controls.Add(this.groupBox3);
             this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.button4);
+            this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -574,6 +575,180 @@
             this.button4.Text = "Revert";
             this.button4.UseVisualStyleBackColor = true;
             // 
+            // pnlPostItContainer
+            // 
+            this.pnlPostItContainer.BackColor = System.Drawing.Color.Transparent;
+            this.pnlPostItContainer.BackgroundImage = global::OfficeManager.Properties.Resources.fzm_seamless_corkboard1;
+            this.pnlPostItContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlPostItContainer.Controls.Add(this.lblPostItMessage);
+            this.pnlPostItContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlPostItContainer.Location = new System.Drawing.Point(310, 3);
+            this.pnlPostItContainer.Name = "pnlPostItContainer";
+            this.pnlPostItContainer.Size = new System.Drawing.Size(667, 484);
+            this.pnlPostItContainer.TabIndex = 1;
+            this.pnlPostItContainer.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlPostItContainer_MouseClick);
+            // 
+            // lblPostItMessage
+            // 
+            this.lblPostItMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPostItMessage.BackColor = System.Drawing.Color.White;
+            this.lblPostItMessage.Location = new System.Drawing.Point(3, 445);
+            this.lblPostItMessage.Name = "lblPostItMessage";
+            this.lblPostItMessage.Size = new System.Drawing.Size(659, 31);
+            this.lblPostItMessage.TabIndex = 0;
+            // 
+            // button10
+            // 
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button10.Image = global::OfficeManager.Properties.Resources.diagram_icon1;
+            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button10.Location = new System.Drawing.Point(482, 467);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(148, 23);
+            this.button10.TabIndex = 33;
+            this.button10.Text = "View All Work Time";
+            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button9.Image = global::OfficeManager.Properties.Resources.flag_icon;
+            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button9.Location = new System.Drawing.Point(313, 467);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(146, 23);
+            this.button9.TabIndex = 32;
+            this.button9.Text = "Request Sick Day";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button8.Image = global::OfficeManager.Properties.Resources.stop_icon;
+            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.Location = new System.Drawing.Point(313, 441);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(146, 23);
+            this.button8.TabIndex = 31;
+            this.button8.Text = "Decline Work Time";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button7.Image = global::OfficeManager.Properties.Resources.info_icon;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.Location = new System.Drawing.Point(482, 441);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(148, 23);
+            this.button7.TabIndex = 30;
+            this.button7.Text = "View All Available Time";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button6.Image = global::OfficeManager.Properties.Resources.delete_icon;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(148, 467);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(142, 23);
+            this.button6.TabIndex = 29;
+            this.button6.Text = "Delete Available Time";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button5.Image = global::OfficeManager.Properties.Resources.plus_icon;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(148, 440);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(142, 23);
+            this.button5.TabIndex = 28;
+            this.button5.Text = "Add Available Time";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button11
+            // 
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button11.Image = global::OfficeManager.Properties.Resources.stop_icon;
+            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button11.Location = new System.Drawing.Point(644, 438);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(161, 23);
+            this.button11.TabIndex = 34;
+            this.button11.Text = "Add Vacation Request";
+            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button12.Image = global::OfficeManager.Properties.Resources.stop_icon;
+            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button12.Location = new System.Drawing.Point(645, 467);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(161, 23);
+            this.button12.TabIndex = 35;
+            this.button12.Text = "Cancel Vacation Request";
+            this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button13.Image = global::OfficeManager.Properties.Resources.stop_icon;
+            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button13.Location = new System.Drawing.Point(812, 438);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(169, 23);
+            this.button13.TabIndex = 36;
+            this.button13.Text = "View All Vacation Request";
+            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button14.Image = global::OfficeManager.Properties.Resources.stop_icon;
+            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button14.Location = new System.Drawing.Point(812, 467);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(168, 23);
+            this.button14.TabIndex = 37;
+            this.button14.Text = "Cancel Scheduled Vacation";
+            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Palatino Linotype", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(326, -9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(157, 41);
+            this.label8.TabIndex = 38;
+            this.label8.Text = "WEEK OF";
+            this.label8.Click += new System.EventHandler(this.label8_Click_1);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(482, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(275, 26);
+            this.dateTimePicker1.TabIndex = 39;
+            // 
             // calendarSchedule
             // 
             this.calendarSchedule.AutoScroll = true;
@@ -589,7 +764,7 @@
             // 
             this.calendarControl21.AutoScroll = true;
             this.calendarControl21.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.calendarControl21.Location = new System.Drawing.Point(143, 5);
+            this.calendarControl21.Location = new System.Drawing.Point(143, 26);
             this.calendarControl21.Margin = new System.Windows.Forms.Padding(0);
             this.calendarControl21.Name = "calendarControl21";
             this.calendarControl21.Size = new System.Drawing.Size(838, 410);
@@ -612,11 +787,11 @@
             this.tabs.ResumeLayout(false);
             this.tabCommunication.ResumeLayout(false);
             this.tblLytPostItNote.ResumeLayout(false);
-            this.pnlPostItContainer.ResumeLayout(false);
             this.tabSchedule.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -633,6 +808,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.pnlPostItContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -688,6 +864,18 @@
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.TextBox textBox13;
         private CalendarControl2 calendarControl21;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 

@@ -60,6 +60,41 @@ namespace OfficeManager.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap delete_icon {
+            get {
+                object obj = ResourceManager.GetObject("delete-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap delete_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("delete-icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap diagram_icon {
+            get {
+                object obj = ResourceManager.GetObject("diagram-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap diagram_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("diagram-icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap flag_icon {
+            get {
+                object obj = ResourceManager.GetObject("flag-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap fzm_seamless_corkboard_texture_01__500x500_ {
             get {
                 object obj = ResourceManager.GetObject("fzm-seamless.corkboard.texture-01-[500x500]", resourceCulture);
@@ -70,6 +105,27 @@ namespace OfficeManager.Properties {
         internal static System.Drawing.Bitmap fzm_seamless_corkboard1 {
             get {
                 object obj = ResourceManager.GetObject("fzm-seamless.corkboard1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap info_icon {
+            get {
+                object obj = ResourceManager.GetObject("info-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap plus_icon {
+            get {
+                object obj = ResourceManager.GetObject("plus-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap stop_icon {
+            get {
+                object obj = ResourceManager.GetObject("stop-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

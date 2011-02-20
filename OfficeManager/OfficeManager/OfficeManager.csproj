@@ -133,6 +133,30 @@
   <ItemGroup>
     <None Include="Resources\fzm-seamless.corkboard.texture-01-[500x500].jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diagram-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diagram-icon1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
