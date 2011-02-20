@@ -14,7 +14,7 @@ namespace OfficeManager
 {
     public partial class CalendarControl2 : UserControl
     {
-        private formSchedule scheduler;
+        //private formSchedule scheduler;
         private Dictionary<String, Label> timeLabels;
         private Label[] dateLabels = new Label[7];
         private ArrayList stringTimes;
@@ -77,13 +77,13 @@ namespace OfficeManager
 
         private void lblS6_Click(object sender, EventArgs e)
         {
-            scheduler = new Forms.formSchedule(this);
-            scheduler.ShowDialog();
+            //scheduler = new Forms.formSchedule(this);
+            //scheduler.ShowDialog();
         }
 
         public void SaveClickEvent(double startTime, double endTime)
         {
-            scheduler.Close();
+            //scheduler.Close();
         }
 
         private String get12HourFormat(int time)
