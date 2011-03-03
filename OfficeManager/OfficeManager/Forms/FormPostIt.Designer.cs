@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPostIt));
             this.btnPost = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -46,7 +47,10 @@
             // btnPost
             // 
             this.btnPost.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.btnPost.Location = new System.Drawing.Point(120, 214);
+            this.btnPost.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPost.BackgroundImage")));
+            this.btnPost.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnPost.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPost.Location = new System.Drawing.Point(117, 214);
             this.btnPost.Name = "btnPost";
             this.btnPost.Size = new System.Drawing.Size(75, 23);
             this.btnPost.TabIndex = 5;
@@ -155,7 +159,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(117, 19);
+            this.label2.Location = new System.Drawing.Point(70, 19);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 8;
@@ -184,6 +188,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "FormPostIt";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.FormPostIt_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

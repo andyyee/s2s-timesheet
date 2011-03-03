@@ -103,5 +103,10 @@ namespace OfficeManager
                 textColor = colorDlg.Color;
             }
         }
+
+        private void FormPostIt_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
