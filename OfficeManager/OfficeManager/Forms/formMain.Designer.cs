@@ -88,38 +88,53 @@
             this.button4 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.groupBox19 = new System.Windows.Forms.GroupBox();
-            this.groupBox18 = new System.Windows.Forms.GroupBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
             this.calendarSchedule = new OfficeManager.CalendarControl();
             this.calendarControl21 = new OfficeManager.CalendarControl2();
+            this.calendarControl22 = new OfficeManager.CalendarControl2();
             this.tabs.SuspendLayout();
             this.tabCommunication.SuspendLayout();
             this.tblLytPostItNote.SuspendLayout();
@@ -139,18 +154,19 @@
             this.tabPage2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.groupBox18.SuspendLayout();
+            this.groupBox16.SuspendLayout();
+            this.groupBox14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox19.SuspendLayout();
+            this.groupBox15.SuspendLayout();
             this.tabPage5.SuspendLayout();
+            this.groupBox17.SuspendLayout();
+            this.groupBox13.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox12.SuspendLayout();
-            this.groupBox13.SuspendLayout();
-            this.groupBox14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox15.SuspendLayout();
-            this.groupBox16.SuspendLayout();
-            this.groupBox17.SuspendLayout();
-            this.groupBox19.SuspendLayout();
-            this.groupBox18.SuspendLayout();
+            this.groupBox20.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabs
@@ -227,9 +243,9 @@
             this.lblPostItMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPostItMessage.BackColor = System.Drawing.Color.White;
-            this.lblPostItMessage.Location = new System.Drawing.Point(3, 23);
+            this.lblPostItMessage.Location = new System.Drawing.Point(3, -399);
             this.lblPostItMessage.Name = "lblPostItMessage";
-            this.lblPostItMessage.Size = new System.Drawing.Size(114, 31);
+            this.lblPostItMessage.Size = new System.Drawing.Size(0, 31);
             this.lblPostItMessage.TabIndex = 0;
             // 
             // pnlAnnouncements
@@ -798,6 +814,19 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.dateTimePicker2);
+            this.tabPage2.Controls.Add(this.button17);
+            this.tabPage2.Controls.Add(this.button18);
+            this.tabPage2.Controls.Add(this.button19);
+            this.tabPage2.Controls.Add(this.button20);
+            this.tabPage2.Controls.Add(this.button21);
+            this.tabPage2.Controls.Add(this.button22);
+            this.tabPage2.Controls.Add(this.button23);
+            this.tabPage2.Controls.Add(this.button24);
+            this.tabPage2.Controls.Add(this.button25);
+            this.tabPage2.Controls.Add(this.button26);
+            this.tabPage2.Controls.Add(this.calendarControl22);
+            this.tabPage2.Controls.Add(this.label12);
             this.tabPage2.Controls.Add(this.button15);
             this.tabPage2.Controls.Add(this.button16);
             this.tabPage2.Controls.Add(this.tabControl1);
@@ -809,6 +838,25 @@
             this.tabPage2.Text = "Profile v3";
             this.tabPage2.UseVisualStyleBackColor = true;
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(4, 463);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(53, 30);
+            this.button15.TabIndex = 32;
+            this.button15.Text = "Revert";
+            this.button15.UseVisualStyleBackColor = true;
+            // 
+            // button16
+            // 
+            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.Location = new System.Drawing.Point(57, 463);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(98, 30);
+            this.button16.TabIndex = 33;
+            this.button16.Text = "Update";
+            this.button16.UseVisualStyleBackColor = true;
             // 
             // tabControl1
             // 
@@ -833,8 +881,167 @@
             this.tabPage4.Text = "Public (General)";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // groupBox18
+            // 
+            this.groupBox18.Controls.Add(this.textBox21);
+            this.groupBox18.Location = new System.Drawing.Point(5, 376);
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.Size = new System.Drawing.Size(132, 50);
+            this.groupBox18.TabIndex = 34;
+            this.groupBox18.TabStop = false;
+            this.groupBox18.Text = "Email Address";
+            // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(6, 19);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(120, 20);
+            this.textBox21.TabIndex = 0;
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.Controls.Add(this.comboBox1);
+            this.groupBox16.Location = new System.Drawing.Point(5, 322);
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.Size = new System.Drawing.Size(132, 48);
+            this.groupBox16.TabIndex = 30;
+            this.groupBox16.TabStop = false;
+            this.groupBox16.Text = "Job Title";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "(Unknown)",
+            "Add new..."});
+            this.comboBox1.Location = new System.Drawing.Point(6, 19);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(120, 21);
+            this.comboBox1.TabIndex = 0;
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.pictureBox1);
+            this.groupBox14.Controls.Add(this.groupBox19);
+            this.groupBox14.Controls.Add(this.groupBox15);
+            this.groupBox14.Location = new System.Drawing.Point(5, 6);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(132, 315);
+            this.groupBox14.TabIndex = 27;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "Basic";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(6, 118);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(120, 139);
+            this.pictureBox1.TabIndex = 26;
+            this.pictureBox1.TabStop = false;
+            // 
+            // groupBox19
+            // 
+            this.groupBox19.Controls.Add(this.textBox19);
+            this.groupBox19.Controls.Add(this.label9);
+            this.groupBox19.Controls.Add(this.label11);
+            this.groupBox19.Controls.Add(this.textBox17);
+            this.groupBox19.Controls.Add(this.textBox18);
+            this.groupBox19.Controls.Add(this.label10);
+            this.groupBox19.Location = new System.Drawing.Point(2, 17);
+            this.groupBox19.Name = "groupBox19";
+            this.groupBox19.Size = new System.Drawing.Size(124, 100);
+            this.groupBox19.TabIndex = 30;
+            this.groupBox19.TabStop = false;
+            this.groupBox19.Text = "Name";
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(41, 75);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.ReadOnly = true;
+            this.textBox19.Size = new System.Drawing.Size(77, 20);
+            this.textBox19.TabIndex = 1;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 16);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(26, 13);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "First";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 78);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(27, 13);
+            this.label11.TabIndex = 29;
+            this.label11.Text = "Last";
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(41, 13);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.ReadOnly = true;
+            this.textBox17.Size = new System.Drawing.Size(77, 20);
+            this.textBox17.TabIndex = 1;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(41, 45);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.ReadOnly = true;
+            this.textBox18.Size = new System.Drawing.Size(77, 20);
+            this.textBox18.TabIndex = 1;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 48);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(38, 13);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "Middle";
+            // 
+            // groupBox15
+            // 
+            this.groupBox15.Controls.Add(this.radioButton2);
+            this.groupBox15.Controls.Add(this.radioButton1);
+            this.groupBox15.Location = new System.Drawing.Point(3, 263);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(123, 47);
+            this.groupBox15.TabIndex = 29;
+            this.groupBox15.TabStop = false;
+            this.groupBox15.Text = "Gender";
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Enabled = false;
+            this.radioButton2.Location = new System.Drawing.Point(6, 19);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(59, 17);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Female";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(71, 19);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(48, 17);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Male";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.groupBox20);
             this.tabPage5.Controls.Add(this.groupBox17);
             this.tabPage5.Controls.Add(this.groupBox13);
             this.tabPage5.Controls.Add(this.groupBox10);
@@ -845,6 +1052,42 @@
             this.tabPage5.TabIndex = 1;
             this.tabPage5.Text = "Personal";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // groupBox17
+            // 
+            this.groupBox17.Controls.Add(this.textBox20);
+            this.groupBox17.Location = new System.Drawing.Point(5, 191);
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.Size = new System.Drawing.Size(132, 50);
+            this.groupBox17.TabIndex = 27;
+            this.groupBox17.TabStop = false;
+            this.groupBox17.Text = "Social Security Number";
+            // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(21, 19);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.ReadOnly = true;
+            this.textBox20.Size = new System.Drawing.Size(100, 20);
+            this.textBox20.TabIndex = 3;
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.textBox16);
+            this.groupBox13.Location = new System.Drawing.Point(5, 130);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(132, 50);
+            this.groupBox13.TabIndex = 26;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "Employee ID";
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(21, 19);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.ReadOnly = true;
+            this.textBox16.Size = new System.Drawing.Size(100, 20);
+            this.textBox16.TabIndex = 3;
             // 
             // groupBox10
             // 
@@ -892,218 +1135,175 @@
             this.textBox15.Size = new System.Drawing.Size(100, 20);
             this.textBox15.TabIndex = 2;
             // 
-            // groupBox13
+            // groupBox20
             // 
-            this.groupBox13.Controls.Add(this.textBox16);
-            this.groupBox13.Location = new System.Drawing.Point(5, 130);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(132, 50);
-            this.groupBox13.TabIndex = 26;
-            this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "Employee ID";
+            this.groupBox20.Controls.Add(this.comboBox2);
+            this.groupBox20.Location = new System.Drawing.Point(5, 247);
+            this.groupBox20.Name = "groupBox20";
+            this.groupBox20.Size = new System.Drawing.Size(132, 50);
+            this.groupBox20.TabIndex = 28;
+            this.groupBox20.TabStop = false;
+            this.groupBox20.Text = "Marital Status";
             // 
-            // textBox16
+            // comboBox2
             // 
-            this.textBox16.Location = new System.Drawing.Point(21, 19);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(100, 20);
-            this.textBox16.TabIndex = 3;
+            this.comboBox2.Enabled = false;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Not Married",
+            "Married"});
+            this.comboBox2.Location = new System.Drawing.Point(20, 20);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(101, 21);
+            this.comboBox2.TabIndex = 0;
             // 
-            // groupBox14
+            // dateTimePicker2
             // 
-            this.groupBox14.Controls.Add(this.pictureBox1);
-            this.groupBox14.Controls.Add(this.groupBox19);
-            this.groupBox14.Controls.Add(this.groupBox15);
-            this.groupBox14.Location = new System.Drawing.Point(5, 6);
-            this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(132, 315);
-            this.groupBox14.TabIndex = 27;
-            this.groupBox14.TabStop = false;
-            this.groupBox14.Text = "Basic";
+            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker2.Location = new System.Drawing.Point(497, -1);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(275, 26);
+            this.dateTimePicker2.TabIndex = 52;
             // 
-            // textBox18
+            // button17
             // 
-            this.textBox18.Location = new System.Drawing.Point(41, 45);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.ReadOnly = true;
-            this.textBox18.Size = new System.Drawing.Size(77, 20);
-            this.textBox18.TabIndex = 1;
+            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button17.Image = global::OfficeManager.Properties.Resources.stop_icon;
+            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button17.Location = new System.Drawing.Point(810, 466);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(168, 23);
+            this.button17.TabIndex = 50;
+            this.button17.Text = "Cancel Scheduled Vacation";
+            this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button17.UseVisualStyleBackColor = true;
             // 
-            // textBox19
+            // button18
             // 
-            this.textBox19.Location = new System.Drawing.Point(41, 75);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.ReadOnly = true;
-            this.textBox19.Size = new System.Drawing.Size(77, 20);
-            this.textBox19.TabIndex = 1;
+            this.button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button18.Image = global::OfficeManager.Properties.Resources.stop_icon;
+            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button18.Location = new System.Drawing.Point(809, 440);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(169, 23);
+            this.button18.TabIndex = 49;
+            this.button18.Text = "View All Vacation Request";
+            this.button18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button18.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // button19
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(6, 118);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 139);
-            this.pictureBox1.TabIndex = 26;
-            this.pictureBox1.TabStop = false;
+            this.button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button19.Image = global::OfficeManager.Properties.Resources.stop_icon;
+            this.button19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button19.Location = new System.Drawing.Point(639, 466);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(161, 23);
+            this.button19.TabIndex = 48;
+            this.button19.Text = "Cancel Vacation Request";
+            this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button19.UseVisualStyleBackColor = true;
             // 
-            // label9
+            // button20
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 16);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(26, 13);
-            this.label9.TabIndex = 27;
-            this.label9.Text = "First";
+            this.button20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button20.Image = global::OfficeManager.Properties.Resources.stop_icon;
+            this.button20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button20.Location = new System.Drawing.Point(639, 440);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(161, 23);
+            this.button20.TabIndex = 47;
+            this.button20.Text = "Add Vacation Request";
+            this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button20.UseVisualStyleBackColor = true;
             // 
-            // textBox17
+            // button21
             // 
-            this.textBox17.Location = new System.Drawing.Point(41, 13);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(77, 20);
-            this.textBox17.TabIndex = 1;
+            this.button21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button21.Image = global::OfficeManager.Properties.Resources.diagram_icon1;
+            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button21.Location = new System.Drawing.Point(480, 466);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(148, 23);
+            this.button21.TabIndex = 46;
+            this.button21.Text = "View All Work Time";
+            this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button21.UseVisualStyleBackColor = true;
             // 
-            // label10
+            // button22
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 48);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(38, 13);
-            this.label10.TabIndex = 28;
-            this.label10.Text = "Middle";
+            this.button22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button22.Image = global::OfficeManager.Properties.Resources.flag_icon;
+            this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button22.Location = new System.Drawing.Point(318, 466);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(146, 23);
+            this.button22.TabIndex = 45;
+            this.button22.Text = "Request Sick Day";
+            this.button22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button22.UseVisualStyleBackColor = true;
             // 
-            // label11
+            // button23
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 78);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(27, 13);
-            this.label11.TabIndex = 29;
-            this.label11.Text = "Last";
+            this.button23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button23.Image = global::OfficeManager.Properties.Resources.stop_icon;
+            this.button23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button23.Location = new System.Drawing.Point(318, 440);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(146, 23);
+            this.button23.TabIndex = 44;
+            this.button23.Text = "Decline Work Time";
+            this.button23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button23.UseVisualStyleBackColor = true;
             // 
-            // groupBox15
+            // button24
             // 
-            this.groupBox15.Controls.Add(this.radioButton2);
-            this.groupBox15.Controls.Add(this.radioButton1);
-            this.groupBox15.Location = new System.Drawing.Point(3, 263);
-            this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(123, 47);
-            this.groupBox15.TabIndex = 29;
-            this.groupBox15.TabStop = false;
-            this.groupBox15.Text = "Gender";
+            this.button24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button24.Image = global::OfficeManager.Properties.Resources.info_icon;
+            this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button24.Location = new System.Drawing.Point(480, 440);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(148, 23);
+            this.button24.TabIndex = 43;
+            this.button24.Text = "View All Available Time";
+            this.button24.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button24.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // button25
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(71, 19);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(48, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button25.Image = global::OfficeManager.Properties.Resources.delete_icon;
+            this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button25.Location = new System.Drawing.Point(163, 466);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(142, 23);
+            this.button25.TabIndex = 42;
+            this.button25.Text = "Delete Available Time";
+            this.button25.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button25.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // button26
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Enabled = false;
-            this.radioButton2.Location = new System.Drawing.Point(6, 19);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(59, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.button26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button26.Image = global::OfficeManager.Properties.Resources.plus_icon;
+            this.button26.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button26.Location = new System.Drawing.Point(163, 439);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(142, 23);
+            this.button26.TabIndex = 41;
+            this.button26.Text = "Add Available Time";
+            this.button26.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button26.UseVisualStyleBackColor = true;
             // 
-            // groupBox16
+            // label12
             // 
-            this.groupBox16.Controls.Add(this.comboBox1);
-            this.groupBox16.Location = new System.Drawing.Point(5, 322);
-            this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Size = new System.Drawing.Size(132, 48);
-            this.groupBox16.TabIndex = 30;
-            this.groupBox16.TabStop = false;
-            this.groupBox16.Text = "Job Title";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "(Unknown)",
-            "Add new..."});
-            this.comboBox1.Location = new System.Drawing.Point(6, 19);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(120, 21);
-            this.comboBox1.TabIndex = 0;
-            // 
-            // button15
-            // 
-            this.button15.Location = new System.Drawing.Point(4, 463);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(53, 30);
-            this.button15.TabIndex = 32;
-            this.button15.Text = "Revert";
-            this.button15.UseVisualStyleBackColor = true;
-            // 
-            // button16
-            // 
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.Location = new System.Drawing.Point(57, 463);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(98, 30);
-            this.button16.TabIndex = 33;
-            this.button16.Text = "Update";
-            this.button16.UseVisualStyleBackColor = true;
-            // 
-            // groupBox17
-            // 
-            this.groupBox17.Controls.Add(this.textBox20);
-            this.groupBox17.Location = new System.Drawing.Point(5, 191);
-            this.groupBox17.Name = "groupBox17";
-            this.groupBox17.Size = new System.Drawing.Size(132, 50);
-            this.groupBox17.TabIndex = 27;
-            this.groupBox17.TabStop = false;
-            this.groupBox17.Text = "Social Security Number";
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(21, 19);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.ReadOnly = true;
-            this.textBox20.Size = new System.Drawing.Size(100, 20);
-            this.textBox20.TabIndex = 3;
-            // 
-            // groupBox19
-            // 
-            this.groupBox19.Controls.Add(this.textBox19);
-            this.groupBox19.Controls.Add(this.label9);
-            this.groupBox19.Controls.Add(this.label11);
-            this.groupBox19.Controls.Add(this.textBox17);
-            this.groupBox19.Controls.Add(this.textBox18);
-            this.groupBox19.Controls.Add(this.label10);
-            this.groupBox19.Location = new System.Drawing.Point(2, 17);
-            this.groupBox19.Name = "groupBox19";
-            this.groupBox19.Size = new System.Drawing.Size(124, 100);
-            this.groupBox19.TabIndex = 30;
-            this.groupBox19.TabStop = false;
-            this.groupBox19.Text = "Name";
-            // 
-            // groupBox18
-            // 
-            this.groupBox18.Controls.Add(this.textBox21);
-            this.groupBox18.Location = new System.Drawing.Point(5, 376);
-            this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Size = new System.Drawing.Size(132, 50);
-            this.groupBox18.TabIndex = 34;
-            this.groupBox18.TabStop = false;
-            this.groupBox18.Text = "Email Address";
-            // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(6, 19);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(120, 20);
-            this.textBox21.TabIndex = 0;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Palatino Linotype", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(341, -10);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(157, 41);
+            this.label12.TabIndex = 51;
+            this.label12.Text = "WEEK OF";
             // 
             // calendarSchedule
             // 
@@ -1125,6 +1325,16 @@
             this.calendarControl21.Name = "calendarControl21";
             this.calendarControl21.Size = new System.Drawing.Size(838, 410);
             this.calendarControl21.TabIndex = 27;
+            // 
+            // calendarControl22
+            // 
+            this.calendarControl22.AutoScroll = true;
+            this.calendarControl22.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.calendarControl22.Location = new System.Drawing.Point(155, 25);
+            this.calendarControl22.Margin = new System.Windows.Forms.Padding(0);
+            this.calendarControl22.Name = "calendarControl22";
+            this.calendarControl22.Size = new System.Drawing.Size(826, 410);
+            this.calendarControl22.TabIndex = 40;
             // 
             // formMain
             // 
@@ -1166,27 +1376,29 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
+            this.groupBox18.ResumeLayout(false);
+            this.groupBox18.PerformLayout();
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox19.ResumeLayout(false);
+            this.groupBox19.PerformLayout();
+            this.groupBox15.ResumeLayout(false);
+            this.groupBox15.PerformLayout();
             this.tabPage5.ResumeLayout(false);
+            this.groupBox17.ResumeLayout(false);
+            this.groupBox17.PerformLayout();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
             this.groupBox10.ResumeLayout(false);
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
-            this.groupBox13.ResumeLayout(false);
-            this.groupBox13.PerformLayout();
-            this.groupBox14.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox15.ResumeLayout(false);
-            this.groupBox15.PerformLayout();
-            this.groupBox16.ResumeLayout(false);
-            this.groupBox17.ResumeLayout(false);
-            this.groupBox17.PerformLayout();
-            this.groupBox19.ResumeLayout(false);
-            this.groupBox19.PerformLayout();
-            this.groupBox18.ResumeLayout(false);
-            this.groupBox18.PerformLayout();
+            this.groupBox20.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1285,6 +1497,21 @@
         private System.Windows.Forms.GroupBox groupBox19;
         private System.Windows.Forms.GroupBox groupBox18;
         private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.GroupBox groupBox20;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button button26;
+        private CalendarControl2 calendarControl22;
+        private System.Windows.Forms.Label label12;
     }
 }
 
