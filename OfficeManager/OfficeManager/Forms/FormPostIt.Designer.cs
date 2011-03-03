@@ -40,6 +40,7 @@
             this.btnBackgroundColor = new System.Windows.Forms.Button();
             this.btnTextColor = new System.Windows.Forms.Button();
             this.lblCounter = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnPost
@@ -151,6 +152,15 @@
             this.lblCounter.TabIndex = 7;
             this.lblCounter.Text = "0";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(117, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Employee";
+            // 
             // FormPostIt
             // 
             this.AcceptButton = this.btnPost;
@@ -158,6 +168,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(387, 248);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblCounter);
             this.Controls.Add(this.btnTextColor);
             this.Controls.Add(this.btnBackgroundColor);
@@ -192,5 +203,6 @@
         private System.Windows.Forms.Button btnTextColor;
         public System.Windows.Forms.RichTextBox txtbxMessage;
         private System.Windows.Forms.Label lblCounter;
+        private System.Windows.Forms.Label label2;
     }
 }
