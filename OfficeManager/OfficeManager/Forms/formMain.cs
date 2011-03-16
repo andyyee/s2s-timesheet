@@ -203,5 +203,10 @@ namespace OfficeManager
         {
 
         }
+
+        private void calendarControl22_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -70,14 +70,14 @@
             this.tblLayoutCalendar.BackColor = System.Drawing.Color.GhostWhite;
             this.tblLayoutCalendar.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tblLayoutCalendar.ColumnCount = 8;
-            this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
+            this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104F));
             this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
             this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
             this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
             this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
             this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
-            this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
-            this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
+            this.tblLayoutCalendar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 113F));
             this.tblLayoutCalendar.Controls.Add(this.label3, 3, 5);
             this.tblLayoutCalendar.Controls.Add(this.label2, 2, 12);
             this.tblLayoutCalendar.Controls.Add(this.lblS630, 1, 3);
@@ -134,7 +134,7 @@
             this.tblLayoutCalendar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
             this.tblLayoutCalendar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
             this.tblLayoutCalendar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
-            this.tblLayoutCalendar.Size = new System.Drawing.Size(836, 408);
+            this.tblLayoutCalendar.Size = new System.Drawing.Size(839, 408);
             this.tblLayoutCalendar.TabIndex = 1;
             this.tblLayoutCalendar.Paint += new System.Windows.Forms.PaintEventHandler(this.tblLayoutCalendar_Paint_1);
             // 
@@ -200,10 +200,10 @@
             this.lblSunday.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lblSunday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSunday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(216)))), ((int)(((byte)(234)))));
-            this.lblSunday.Location = new System.Drawing.Point(60, 1);
+            this.lblSunday.Location = new System.Drawing.Point(66, 1);
             this.lblSunday.Margin = new System.Windows.Forms.Padding(0);
             this.lblSunday.Name = "lblSunday";
-            this.lblSunday.Size = new System.Drawing.Size(110, 20);
+            this.lblSunday.Size = new System.Drawing.Size(104, 20);
             this.lblSunday.TabIndex = 22;
             this.lblSunday.Text = "Sunday";
             this.lblSunday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -293,7 +293,7 @@
             this.lblSaturday.Location = new System.Drawing.Point(726, 1);
             this.lblSaturday.Margin = new System.Windows.Forms.Padding(0);
             this.lblSaturday.Name = "lblSaturday";
-            this.lblSaturday.Size = new System.Drawing.Size(112, 20);
+            this.lblSaturday.Size = new System.Drawing.Size(113, 20);
             this.lblSaturday.TabIndex = 16;
             this.lblSaturday.Text = "Saturday";
             this.lblSaturday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -308,7 +308,7 @@
             this.lblSaturdayDate.Location = new System.Drawing.Point(726, 22);
             this.lblSaturdayDate.Margin = new System.Windows.Forms.Padding(0);
             this.lblSaturdayDate.Name = "lblSaturdayDate";
-            this.lblSaturdayDate.Size = new System.Drawing.Size(112, 20);
+            this.lblSaturdayDate.Size = new System.Drawing.Size(113, 20);
             this.lblSaturdayDate.TabIndex = 15;
             this.lblSaturdayDate.Text = "Date";
             this.lblSaturdayDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -395,10 +395,10 @@
             this.lblSundayDate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblSundayDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSundayDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(216)))), ((int)(((byte)(234)))));
-            this.lblSundayDate.Location = new System.Drawing.Point(60, 22);
+            this.lblSundayDate.Location = new System.Drawing.Point(66, 22);
             this.lblSundayDate.Margin = new System.Windows.Forms.Padding(0);
             this.lblSundayDate.Name = "lblSundayDate";
-            this.lblSundayDate.Size = new System.Drawing.Size(110, 20);
+            this.lblSundayDate.Size = new System.Drawing.Size(104, 20);
             this.lblSundayDate.TabIndex = 8;
             this.lblSundayDate.Text = "Date";
             this.lblSundayDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -412,12 +412,12 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(65, 46);
+            this.label1.Location = new System.Drawing.Point(71, 46);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(3);
             this.tblLayoutCalendar.SetRowSpan(this.label1, 16);
-            this.label1.Size = new System.Drawing.Size(100, 217);
+            this.label1.Size = new System.Drawing.Size(94, 217);
             this.label1.TabIndex = 53;
             this.label1.Text = "8 Hours";
             this.label1.Click += new System.EventHandler(this.lblS6_Click);
@@ -428,7 +428,7 @@
             this.lblTime.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.ForeColor = System.Drawing.Color.Maroon;
-            this.lblTime.Location = new System.Drawing.Point(1, 7);
+            this.lblTime.Location = new System.Drawing.Point(4, 7);
             this.lblTime.Margin = new System.Windows.Forms.Padding(0);
             this.lblTime.Name = "lblTime";
             this.tblLayoutCalendar.SetRowSpan(this.lblTime, 2);
