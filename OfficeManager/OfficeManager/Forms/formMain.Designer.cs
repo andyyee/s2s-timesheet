@@ -97,6 +97,8 @@
             this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.calendarControl22 = new OfficeManager.CalendarControl2();
             this.label12 = new System.Windows.Forms.Label();
@@ -136,8 +138,6 @@
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
             this.tabs.SuspendLayout();
             this.tabCommunication.SuspendLayout();
             this.tblLytPostItNote.SuspendLayout();
@@ -227,7 +227,7 @@
             this.tblLytPostItNote.Name = "tblLytPostItNote";
             this.tblLytPostItNote.RowCount = 1;
             this.tblLytPostItNote.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tblLytPostItNote.Size = new System.Drawing.Size(980, 490);
+            this.tblLytPostItNote.Size = new System.Drawing.Size(186, 68);
             this.tblLytPostItNote.TabIndex = 0;
             // 
             // pnlPostItContainer
@@ -237,9 +237,9 @@
             this.pnlPostItContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlPostItContainer.Controls.Add(this.lblPostItMessage);
             this.pnlPostItContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlPostItContainer.Location = new System.Drawing.Point(310, 3);
+            this.pnlPostItContainer.Location = new System.Drawing.Point(61, 3);
             this.pnlPostItContainer.Name = "pnlPostItContainer";
-            this.pnlPostItContainer.Size = new System.Drawing.Size(667, 484);
+            this.pnlPostItContainer.Size = new System.Drawing.Size(122, 62);
             this.pnlPostItContainer.TabIndex = 1;
             this.pnlPostItContainer.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlPostItContainer_MouseClick);
             // 
@@ -248,7 +248,7 @@
             this.lblPostItMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPostItMessage.BackColor = System.Drawing.Color.White;
-            this.lblPostItMessage.Location = new System.Drawing.Point(3, -1243);
+            this.lblPostItMessage.Location = new System.Drawing.Point(3, -1665);
             this.lblPostItMessage.Name = "lblPostItMessage";
             this.lblPostItMessage.Size = new System.Drawing.Size(0, 31);
             this.lblPostItMessage.TabIndex = 0;
@@ -259,7 +259,7 @@
             this.pnlAnnouncements.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlAnnouncements.Location = new System.Drawing.Point(3, 3);
             this.pnlAnnouncements.Name = "pnlAnnouncements";
-            this.pnlAnnouncements.Size = new System.Drawing.Size(301, 484);
+            this.pnlAnnouncements.Size = new System.Drawing.Size(52, 62);
             this.pnlAnnouncements.TabIndex = 0;
             // 
             // pnlHome
@@ -267,7 +267,7 @@
             this.pnlHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlHome.Location = new System.Drawing.Point(3, 3);
             this.pnlHome.Name = "pnlHome";
-            this.pnlHome.Size = new System.Drawing.Size(980, 490);
+            this.pnlHome.Size = new System.Drawing.Size(186, 68);
             this.pnlHome.TabIndex = 0;
             // 
             // tabStatus
@@ -955,6 +955,32 @@
             this.button22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button22.UseVisualStyleBackColor = true;
             // 
+            // button24
+            // 
+            this.button24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button24.Image = global::OfficeManager.Properties.Resources.info_icon;
+            this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button24.Location = new System.Drawing.Point(480, 440);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(148, 23);
+            this.button24.TabIndex = 43;
+            this.button24.Text = "View All Available Time";
+            this.button24.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button24.UseVisualStyleBackColor = true;
+            // 
+            // button25
+            // 
+            this.button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button25.Image = global::OfficeManager.Properties.Resources.delete_icon;
+            this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button25.Location = new System.Drawing.Point(163, 466);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(142, 23);
+            this.button25.TabIndex = 42;
+            this.button25.Text = "Delete Available Time";
+            this.button25.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button25.UseVisualStyleBackColor = true;
+            // 
             // button26
             // 
             this.button26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -1339,32 +1365,6 @@
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(275, 26);
             this.dateTimePicker2.TabIndex = 52;
-            // 
-            // button24
-            // 
-            this.button24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button24.Image = global::OfficeManager.Properties.Resources.info_icon;
-            this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button24.Location = new System.Drawing.Point(480, 440);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(148, 23);
-            this.button24.TabIndex = 43;
-            this.button24.Text = "View All Available Time";
-            this.button24.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button24.UseVisualStyleBackColor = true;
-            // 
-            // button25
-            // 
-            this.button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button25.Image = global::OfficeManager.Properties.Resources.delete_icon;
-            this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button25.Location = new System.Drawing.Point(163, 466);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(142, 23);
-            this.button25.TabIndex = 42;
-            this.button25.Text = "Delete Available Time";
-            this.button25.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button25.UseVisualStyleBackColor = true;
             // 
             // formMain
             // 
